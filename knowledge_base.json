@@ -1,0 +1,382 @@
+[
+  {
+    "question": "What is machine learning?",
+    "answer": "Machine learning is a branch of artificial intelligence that enables computers to learn from data and improve their performance on tasks without being explicitly programmed. It uses algorithms that identify patterns in data to make predictions or decisions.",
+    "category": "ai_ml"
+  },
+  {
+    "question": "What is deep learning?",
+    "answer": "Deep learning is a subset of machine learning that uses artificial neural networks with many layers (hence 'deep') to model complex patterns in data. It excels at tasks like image recognition, natural language processing, and speech recognition.",
+    "category": "ai_ml"
+  },
+  {
+    "question": "What is a neural network?",
+    "answer": "A neural network is a computational model inspired by the human brain, consisting of interconnected nodes (neurons) arranged in layers. It processes input data through these layers to produce an output, learning by adjusting connection weights during training.",
+    "category": "ai_ml"
+  },
+  {
+    "question": "What is natural language processing?",
+    "answer": "Natural Language Processing (NLP) is a field of AI focused on enabling computers to understand, interpret, and generate human language. Applications include chatbots, translation, sentiment analysis, and question answering systems.",
+    "category": "ai_ml"
+  },
+  {
+    "question": "What is TF-IDF?",
+    "answer": "TF-IDF (Term Frequency-Inverse Document Frequency) is a numerical statistic used in information retrieval to reflect how important a word is to a document in a corpus. TF measures word frequency in a document; IDF penalizes common words across documents.",
+    "category": "nlp"
+  },
+  {
+    "question": "What is cosine similarity?",
+    "answer": "Cosine similarity measures the cosine of the angle between two non-zero vectors, indicating how similar they are regardless of magnitude. It's widely used in NLP to compare text documents represented as term vectors, with a value of 1 being identical and 0 being orthogonal.",
+    "category": "nlp"
+  },
+  {
+    "question": "What is tokenization?",
+    "answer": "Tokenization is the process of splitting text into individual units called tokens (typically words, subwords, or characters). It's a fundamental step in NLP preprocessing that converts raw text into a structured form suitable for analysis.",
+    "category": "nlp"
+  },
+  {
+    "question": "What are stop words?",
+    "answer": "Stop words are common words (like 'the', 'is', 'at') that are often filtered out in NLP tasks because they carry little meaningful information. Removing them reduces noise and improves the performance of text processing algorithms.",
+    "category": "nlp"
+  },
+  {
+    "question": "What is Python?",
+    "answer": "Python is a high-level, interpreted programming language known for its clean syntax, readability, and versatility. It's widely used in web development, data science, AI/ML, automation, and scientific computing thanks to its rich ecosystem of libraries.",
+    "category": "programming"
+  },
+  {
+    "question": "What is FastAPI?",
+    "answer": "FastAPI is a modern, high-performance Python web framework for building APIs. It's based on Python type hints, provides automatic interactive documentation, supports async operations natively, and is one of the fastest Python frameworks available.",
+    "category": "programming"
+  },
+  {
+    "question": "What is React?",
+    "answer": "React is an open-source JavaScript library developed by Meta for building user interfaces. It uses a component-based architecture and a virtual DOM for efficient updates, making it ideal for building dynamic, responsive single-page applications.",
+    "category": "programming"
+  },
+  {
+    "question": "What is REST API?",
+    "answer": "A REST (Representational State Transfer) API is an architectural style for distributed systems that uses HTTP methods (GET, POST, PUT, DELETE) to perform operations on resources identified by URLs. REST APIs are stateless, scalable, and widely used in web development.",
+    "category": "programming"
+  },
+  {
+    "question": "What is Docker?",
+    "answer": "Docker is an open-source platform that automates deploying applications inside lightweight, portable containers. Containers package code and its dependencies together, ensuring consistent behavior across different computing environments.",
+    "category": "devops"
+  },
+  {
+    "question": "What is Git?",
+    "answer": "Git is a distributed version control system that tracks changes in source code during software development. It allows multiple developers to collaborate, maintains a full history of changes, and supports branching and merging workflows.",
+    "category": "devops"
+  },
+  {
+    "question": "What is CI/CD?",
+    "answer": "CI/CD (Continuous Integration/Continuous Deployment) is a software development practice that automates building, testing, and deploying code changes. CI integrates code frequently; CD automates deployment to staging or production environments.",
+    "category": "devops"
+  },
+  {
+    "question": "What is a database?",
+    "answer": "A database is an organized collection of structured data stored electronically and managed by a Database Management System (DBMS). Databases enable efficient storage, retrieval, modification, and deletion of data using query languages like SQL.",
+    "category": "data"
+  },
+  {
+    "question": "What is SQL?",
+    "answer": "SQL (Structured Query Language) is a domain-specific language used for managing and querying relational databases. It allows users to create, read, update, and delete data, as well as define schema and manage access permissions.",
+    "category": "data"
+  },
+  {
+    "question": "What is the difference between SQL and NoSQL?",
+    "answer": "SQL databases are relational, use structured tables with predefined schemas, and are great for complex queries. NoSQL databases (like MongoDB, Redis) are non-relational, flexible schema, and optimized for scalability and unstructured data like documents, graphs, or key-value pairs.",
+    "category": "data"
+  },
+  {
+    "question": "What is cloud computing?",
+    "answer": "Cloud computing delivers computing services (servers, storage, databases, networking, software) over the internet on a pay-as-you-go basis. Major providers include AWS, Google Cloud, and Azure. It enables scalability, flexibility, and reduces infrastructure management overhead.",
+    "category": "cloud"
+  },
+  {
+    "question": "What is Kubernetes?",
+    "answer": "Kubernetes (K8s) is an open-source container orchestration platform that automates deploying, scaling, and managing containerized applications. It groups containers into logical units (pods) and handles load balancing, self-healing, and rolling updates.",
+    "category": "devops"
+  },
+  {
+    "question": "What is an API?",
+    "answer": "An API (Application Programming Interface) is a set of rules and protocols that allows different software applications to communicate with each other. APIs define the methods and data formats for requesting and exchanging information between systems.",
+    "category": "programming"
+  },
+  {
+    "question": "What is CORS?",
+    "answer": "CORS (Cross-Origin Resource Sharing) is a browser security mechanism that restricts web pages from making requests to a different domain than the one that served the page. Servers can enable CORS by including specific HTTP headers to allow cross-origin requests.",
+    "category": "programming"
+  },
+  {
+    "question": "What is scikit-learn?",
+    "answer": "Scikit-learn is a free, open-source Python machine learning library built on NumPy, SciPy, and Matplotlib. It provides simple, efficient tools for data mining and analysis including classification, regression, clustering, and dimensionality reduction algorithms.",
+    "category": "ai_ml"
+  },
+  {
+    "question": "What is a transformer model?",
+    "answer": "A transformer is a deep learning architecture introduced in 2017 that uses self-attention mechanisms to process sequential data. It revolutionized NLP by enabling models like BERT and GPT to understand context across entire sequences simultaneously, rather than sequentially.",
+    "category": "ai_ml"
+  },
+  {
+    "question": "What is BERT?",
+    "answer": "BERT (Bidirectional Encoder Representations from Transformers) is a pre-trained NLP model by Google that reads text bidirectionally, understanding context from both left and right. It achieves state-of-the-art performance on tasks like question answering, sentiment analysis, and named entity recognition.",
+    "category": "ai_ml"
+  },
+  {
+    "question": "What is the capital of France?",
+    "answer": "The capital of France is Paris. It is the largest city in France and serves as the country's political, economic, and cultural center, home to landmarks like the Eiffel Tower and the Louvre.",
+    "category": "general"
+  },
+  {
+    "question": "What is the capital of Nigeria?",
+    "answer": "The capital of Nigeria is Abuja. It became the capital in 1991, replacing Lagos. Abuja is located in the center of the country and was purpose-built to serve as the nation's capital.",
+    "category": "general"
+  },
+  {
+    "question": "What is the speed of light?",
+    "answer": "The speed of light in a vacuum is approximately 299,792,458 meters per second, often rounded to 300,000 kilometers per second. It is denoted by the letter 'c' and is the fastest speed at which energy or information can travel.",
+    "category": "science"
+  },
+  {
+    "question": "Who invented the telephone?",
+    "answer": "The telephone was invented by Alexander Graham Bell in 1876. He was the first to be awarded a patent for the device, which allowed voice communication over electrical wires, revolutionizing long-distance communication.",
+    "category": "history"
+  },
+  {
+    "question": "What is photosynthesis?",
+    "answer": "Photosynthesis is the process by which plants, algae, and some bacteria convert sunlight, water, and carbon dioxide into glucose and oxygen. It takes place in the chloroplasts of plant cells and is the foundation of most food chains on Earth.",
+    "category": "science"
+  },
+  {
+    "question": "What is the water cycle?",
+    "answer": "The water cycle is the continuous movement of water through Earth's systems via evaporation, condensation, precipitation, and collection. The sun drives evaporation from oceans and lakes, water vapor rises and forms clouds, then falls as rain or snow.",
+    "category": "science"
+  },
+  {
+    "question": "What is gravity?",
+    "answer": "Gravity is a fundamental force of nature that attracts objects with mass toward one another. On Earth, it pulls objects toward the center of the planet giving them weight. It was first described mathematically by Isaac Newton and later refined by Einstein's theory of general relativity.",
+    "category": "science"
+  },
+  {
+    "question": "What is DNA?",
+    "answer": "DNA (Deoxyribonucleic Acid) is the molecule that carries genetic information in all living organisms. It is shaped like a double helix and contains instructions for building proteins and directing biological processes. DNA is passed from parents to offspring during reproduction.",
+    "category": "science"
+  },
+  {
+    "question": "What is the solar system?",
+    "answer": "The solar system consists of the Sun and all the celestial objects that orbit it, including eight planets, their moons, dwarf planets, asteroids, and comets. The eight planets in order from the Sun are Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune.",
+    "category": "science"
+  },
+  {
+    "question": "What is climate change?",
+    "answer": "Climate change refers to long-term shifts in global temperatures and weather patterns. While some changes are natural, since the 20th century human activities like burning fossil fuels have been the main driver, releasing greenhouse gases that trap heat in the atmosphere.",
+    "category": "science"
+  },
+  {
+    "question": "What is the Internet?",
+    "answer": "The Internet is a global network of interconnected computers and devices that communicate using standardized protocols. It enables services like the World Wide Web, email, streaming, and online communication, connecting billions of people worldwide.",
+    "category": "technology"
+  },
+  {
+    "question": "What is artificial intelligence?",
+    "answer": "Artificial Intelligence (AI) is the simulation of human intelligence processes by computer systems. It includes learning, reasoning, problem solving, perception, and language understanding. AI powers applications like virtual assistants, recommendation systems, and self-driving cars.",
+    "category": "ai_ml"
+  },
+  {
+    "question": "What is blockchain?",
+    "answer": "Blockchain is a distributed digital ledger that records transactions across many computers in a way that makes them tamper-resistant. Each block contains a list of transactions and is linked to the previous one forming a chain. It is the technology behind cryptocurrencies like Bitcoin.",
+    "category": "technology"
+  },
+  {
+    "question": "What is cryptocurrency?",
+    "answer": "Cryptocurrency is a digital or virtual currency that uses cryptography for security and operates on decentralized networks based on blockchain technology. Bitcoin, Ethereum, and Solana are popular examples. It allows peer-to-peer transactions without a central authority like a bank.",
+    "category": "technology"
+  },
+  {
+    "question": "What is cybersecurity?",
+    "answer": "Cybersecurity is the practice of protecting computers, networks, and data from unauthorized access, attacks, and damage. It includes measures like firewalls, encryption, antivirus software, and security protocols to safeguard digital information and systems.",
+    "category": "technology"
+  },
+  {
+    "question": "What is HTML?",
+    "answer": "HTML (HyperText Markup Language) is the standard language for creating web pages. It uses tags to structure content like headings, paragraphs, links, and images. HTML forms the backbone of every webpage and works alongside CSS for styling and JavaScript for interactivity.",
+    "category": "programming"
+  },
+  {
+    "question": "What is CSS?",
+    "answer": "CSS (Cascading Style Sheets) is a stylesheet language used to control the visual presentation of HTML documents. It defines colors, fonts, layouts, spacing, and responsive designs. CSS separates content from design making websites easier to maintain and style.",
+    "category": "programming"
+  },
+  {
+    "question": "What is JavaScript?",
+    "answer": "JavaScript is a versatile programming language primarily used to add interactivity to websites. It runs directly in web browsers and can also run on servers via Node.js. It powers dynamic content, form validation, animations, and modern web frameworks like React and Vue.",
+    "category": "programming"
+  },
+  {
+    "question": "What is an algorithm?",
+    "answer": "An algorithm is a step-by-step set of instructions designed to solve a problem or accomplish a task. In computing, algorithms are used to sort data, search for information, process images, and power AI systems. Good algorithms are efficient, accurate, and scalable.",
+    "category": "programming"
+  },
+  {
+    "question": "What is object oriented programming?",
+    "answer": "Object Oriented Programming (OOP) is a programming paradigm that organizes code into objects containing data and methods. The four main principles are encapsulation, inheritance, polymorphism, and abstraction. Languages like Python, Java, and C++ support OOP.",
+    "category": "programming"
+  },
+  {
+    "question": "What is Linux?",
+    "answer": "Linux is a free, open-source operating system kernel created by Linus Torvalds in 1991. It powers servers, smartphones via Android, supercomputers, and embedded systems. Popular Linux distributions include Ubuntu, Fedora, and Debian.",
+    "category": "technology"
+  },
+  {
+    "question": "What is open source?",
+    "answer": "Open source refers to software whose source code is freely available for anyone to view, modify, and distribute. It encourages collaboration and transparency. Popular open source projects include Linux, Python, React, and the Firefox browser.",
+    "category": "technology"
+  },
+  {
+    "question": "What is a microservice?",
+    "answer": "A microservice is an architectural style where an application is built as a collection of small, independent services that each handle a specific function. They communicate via APIs and can be deployed separately, making systems more scalable and easier to maintain.",
+    "category": "devops"
+  },
+  {
+    "question": "What is agile methodology?",
+    "answer": "Agile is a software development methodology that emphasizes iterative development, collaboration, and flexibility. Work is broken into short cycles called sprints, typically 1-4 weeks. Teams continuously deliver working software and adapt to changing requirements.",
+    "category": "programming"
+  },
+  {
+    "question": "What is data science?",
+    "answer": "Data science is an interdisciplinary field that uses statistics, programming, and domain knowledge to extract insights from data. Data scientists collect, clean, analyze, and visualize data to help organizations make informed decisions.",
+    "category": "data"
+  },
+  {
+    "question": "What is big data?",
+    "answer": "Big data refers to extremely large datasets that are too complex for traditional data processing tools. It is characterized by the three Vs: Volume (huge amounts), Velocity (fast generation), and Variety (different formats). Tools like Hadoop and Spark are used to process big data.",
+    "category": "data"
+  },
+  {
+    "question": "What is pandas in Python?",
+    "answer": "Pandas is a powerful Python library for data manipulation and analysis. It provides data structures like DataFrames and Series that make it easy to load, clean, transform, and analyze structured data. It is widely used in data science and machine learning workflows.",
+    "category": "programming"
+  },
+  {
+    "question": "What is NumPy?",
+    "answer": "NumPy is a fundamental Python library for numerical computing. It provides support for large multi-dimensional arrays and matrices along with a collection of mathematical functions. It is the foundation of many scientific Python libraries including pandas and scikit-learn.",
+    "category": "programming"
+  },
+  {
+    "question": "What is data visualization?",
+    "answer": "Data visualization is the graphical representation of data using charts, graphs, and maps. It helps people understand complex data patterns and trends quickly. Popular tools include Matplotlib, Seaborn, Tableau, and Power BI.",
+    "category": "data"
+  },
+  {
+    "question": "What is reinforcement learning?",
+    "answer": "Reinforcement learning is a type of machine learning where an agent learns by interacting with an environment and receiving rewards or penalties for its actions. It is used in game playing AI like AlphaGo, robotics, and autonomous driving systems.",
+    "category": "ai_ml"
+  },
+  {
+    "question": "What is computer vision?",
+    "answer": "Computer vision is a field of AI that enables computers to interpret and understand visual information from images and videos. Applications include facial recognition, medical imaging, self-driving cars, and quality inspection in manufacturing.",
+    "category": "ai_ml"
+  },
+  {
+    "question": "What is the difference between AI and machine learning?",
+    "answer": "AI is the broader concept of machines simulating human intelligence, while machine learning is a specific subset of AI that enables machines to learn from data without being explicitly programmed. All machine learning is AI but not all AI is machine learning.",
+    "category": "ai_ml"
+  },
+  {
+    "question": "What is a large language model?",
+    "answer": "A large language model (LLM) is a type of AI trained on massive amounts of text data to understand and generate human language. Examples include GPT-4, Claude, and Gemini. LLMs power chatbots, text generation, summarization, and coding assistants.",
+    "category": "ai_ml"
+  },
+  {
+    "question": "What is prompt engineering?",
+    "answer": "Prompt engineering is the practice of designing and optimizing input prompts to get the best responses from AI language models. It involves techniques like providing clear context, examples, and specific instructions to guide the model toward desired outputs.",
+    "category": "ai_ml"
+  },
+  {
+    "question": "What is a VPN?",
+    "answer": "A VPN (Virtual Private Network) encrypts your internet connection and routes it through a server in another location, hiding your IP address and protecting your privacy online. It is used to secure connections on public WiFi, bypass geographic restrictions, and maintain anonymity.",
+    "category": "technology"
+  },
+  {
+    "question": "What is the difference between HTTP and HTTPS?",
+    "answer": "HTTP (HyperText Transfer Protocol) transfers data between browsers and servers without encryption. HTTPS is the secure version that encrypts data using SSL/TLS certificates, protecting sensitive information like passwords and credit card numbers from being intercepted.",
+    "category": "programming"
+  },
+  {
+    "question": "What is recursion?",
+    "answer": "Recursion is a programming technique where a function calls itself to solve smaller instances of the same problem. It requires a base case to stop the recursion. Classic examples include calculating factorials, traversing trees, and solving the Tower of Hanoi puzzle.",
+    "category": "programming"
+  },
+  {
+    "question": "What is a binary tree?",
+    "answer": "A binary tree is a data structure where each node has at most two children called left and right. It is used in searching and sorting algorithms. A binary search tree keeps smaller values on the left and larger values on the right for efficient lookups.",
+    "category": "programming"
+  },
+  {
+    "question": "What is the difference between frontend and backend?",
+    "answer": "Frontend refers to the part of a website or app that users see and interact with, built with HTML, CSS, and JavaScript. Backend refers to the server side that handles data, logic, and databases. Full stack developers work on both frontend and backend.",
+    "category": "programming"
+  },
+  {
+    "question": "What is TypeScript?",
+    "answer": "TypeScript is a superset of JavaScript developed by Microsoft that adds static type checking. It helps catch errors during development rather than at runtime, making large codebases more maintainable. TypeScript compiles down to regular JavaScript.",
+    "category": "programming"
+  },
+  {
+    "question": "What is MongoDB?",
+    "answer": "MongoDB is a popular NoSQL database that stores data in flexible JSON-like documents instead of traditional tables. It is schema-less, highly scalable, and ideal for applications with unstructured or frequently changing data like content management systems and real-time apps.",
+    "category": "data"
+  },
+  {
+    "question": "What is Redis?",
+    "answer": "Redis is an in-memory data structure store used as a database, cache, and message broker. It is extremely fast because it stores data in RAM rather than on disk. It is commonly used for session management, caching, real-time leaderboards, and pub/sub messaging.",
+    "category": "data"
+  },
+  {
+    "question": "What is GraphQL?",
+    "answer": "GraphQL is a query language for APIs developed by Facebook that allows clients to request exactly the data they need. Unlike REST APIs that return fixed data structures, GraphQL lets you specify precisely what fields you want, reducing over-fetching and under-fetching of data.",
+    "category": "programming"
+  },
+  {
+    "question": "What is serverless computing?",
+    "answer": "Serverless computing is a cloud model where developers write and deploy code without managing servers. The cloud provider automatically allocates resources and scales as needed. Examples include AWS Lambda, Google Cloud Functions, and Vercel. You only pay for actual execution time.",
+    "category": "cloud"
+  },
+  {
+    "question": "What is DevOps?",
+    "answer": "DevOps is a set of practices that combines software development and IT operations to shorten the development lifecycle and deliver software continuously. It emphasizes automation, collaboration, and monitoring through tools like Docker, Kubernetes, Jenkins, and GitHub Actions.",
+    "category": "devops"
+  },
+  {
+    "question": "What is a firewall?",
+    "answer": "A firewall is a network security system that monitors and controls incoming and outgoing network traffic based on predefined security rules. It acts as a barrier between trusted internal networks and untrusted external networks like the internet.",
+    "category": "technology"
+  },
+  {
+    "question": "What is an operating system?",
+    "answer": "An operating system (OS) is system software that manages computer hardware and software resources and provides services for programs. Common operating systems include Windows, macOS, Linux, Android, and iOS. The OS acts as an intermediary between users and computer hardware.",
+    "category": "technology"
+  },
+  {
+    "question": "What is RAM?",
+    "answer": "RAM (Random Access Memory) is a type of computer memory that temporarily stores data and instructions that the CPU is actively using. It is much faster than storage drives but loses its contents when power is turned off. More RAM allows a computer to run more programs simultaneously.",
+    "category": "technology"
+  },
+  {
+    "question": "What is the difference between a compiler and an interpreter?",
+    "answer": "A compiler translates the entire source code into machine code before execution, producing a standalone executable file. An interpreter translates and executes code line by line at runtime. Python uses an interpreter while C uses a compiler. Compiled programs are generally faster.",
+    "category": "programming"
+  },
+  {
+    "question": "What is agile scrum?",
+    "answer": "Scrum is a framework within agile methodology that organizes work into fixed-length sprints of 1-4 weeks. It involves defined roles like Scrum Master and Product Owner, daily standups, sprint planning, and retrospectives. It helps teams deliver working software incrementally.",
+    "category": "programming"
+  },
+  {
+    "question": "What is the Pythagorean theorem?",
+    "answer": "The Pythagorean theorem states that in a right-angled triangle, the square of the hypotenuse equals the sum of squares of the other two sides. Written as a² + b² = c² where c is the hypotenuse. It is fundamental in geometry, physics, and computer graphics.",
+    "category": "mathematics"
+  }
+]
