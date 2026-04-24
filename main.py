@@ -26,8 +26,8 @@ app = FastAPI(
 # ── CORS ──────────────────────────────────────────────────────────────────────
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=os.getenv("ALLOWED_ORIGINS", "*").split(","),
-    allow_credentials=True,
+    allow_origins=["*"],
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -73,7 +73,7 @@ def compute_idf(corpus: list[list[str]]) -> dict[str, float]:
     all_terms = set(t for doc in corpus for t in doc)
     for term in all_terms:
         df = sum(1 for doc in corpus if term in doc)
-        idf[term] = math.log((N + 1) / (df + 1)) + 1  # smoothed
+        idf[term] = math.log((N + 1) / (df + 1)) + 1
     return idf
 
 
