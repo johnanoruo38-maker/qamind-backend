@@ -1,8 +1,3 @@
-"""
-NLP Question Answering API — FastAPI Backend
-TF-IDF + Wikipedia fallback — 100% Free
-"""
-
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, validator
@@ -94,9 +89,8 @@ def find_best_answer(question, top_k=1):
 
 
 def extract_topic(question: str) -> str:
-    """Extract the main topic from a question for better search."""
-    question = question.lower().strip()
-    # Remove question words to get the core topic
+    """Extract the core topic from a question."""
+    q = question.lower().strip()
     patterns = [
         r"^what is (a |an |the )?",
         r"^what are (a |an |the )?",
@@ -109,89 +103,97 @@ def extract_topic(question: str) -> str:
         r"^define (a |an |the )?",
         r"^tell me about (a |an |the )?",
         r"^explain (a |an |the )?",
+        r"^describe (a |an |the )?",
     ]
     for pattern in patterns:
-        question = re.sub(pattern, "", question)
-    return question.strip().rstrip("?").strip()
+        q = re.sub(pattern, "", q)
+    return q.strip().rstrip("?").strip()
+
+
+def clean_answer(text: str, max_sentences: int = 3) -> str:
+    """Return a clean short answer from a long text."""
+    text = re.sub(r'\([^)]*\)', '', text)
+    text = re.sub(r'\s+', ' ', text).strip()
+    sentences = [s.strip() for s in text.split('.') if len(s.strip()) > 20]
+    result = '. '.join(sentences[:max_sentences])
+    if result and not result.endswith('.'):
+        result += '.'
+    return result
+
+
+async def search_wikipedia(topic: str, client: httpx.AsyncClient) -> str | None:
+    """Use Wikipedia opensearch to find best matching article title."""
+    try:
+        # Step 1: Use opensearch to find the best matching title
+        search_res = await client.get(
+            "https://en.wikipedia.org/w/api.php",
+            params={
+                "action": "opensearch",
+                "search": topic,
+                "limit": "5",
+                "format": "json",
+            },
+            timeout=8.0,
+        )
+        data = search_res.json()
+        titles = data[1] if len(data) > 1 else []
+
+        if not titles:
+            return None
+
+        # Step 2: Try each title until we get a good summary
+        for title in titles:
+            summary_res = await client.get(
+                f"https://en.wikipedia.org/api/rest_v1/page/summary/{title}",
+                timeout=8.0,
+                follow_redirects=True,
+            )
+            if summary_res.status_code != 200:
+                continue
+
+            page = summary_res.json()
+
+            # Skip disambiguation pages
+            if page.get("type") == "disambiguation":
+                continue
+
+            extract = page.get("extract", "")
+            if extract and len(extract) > 40:
+                return clean_answer(extract)
+
+    except Exception as e:
+        print(f"Wikipedia opensearch error: {e}")
+    return None
 
 
 async def ask_wikipedia(question: str) -> dict | None:
     """Search Wikipedia for any question — completely free."""
     try:
-        topic = extract_topic(question)
         async with httpx.AsyncClient() as client:
+            topic = extract_topic(question)
 
-            # First try direct page summary
-            summary_response = await client.get(
-                f"https://en.wikipedia.org/api/rest_v1/page/summary/{httpx.URL(topic)}",
-                timeout=8.0,
-                follow_redirects=True,
-            )
-            if summary_response.status_code == 200:
-                data = summary_response.json()
-                extract = data.get("extract", "")
-                if extract and len(extract) > 40:
-                    sentences = extract.split(". ")
-                    answer = ". ".join(sentences[:3]).strip()
-                    if not answer.endswith("."):
-                        answer += "."
-                    return {
-                        "answer": answer,
-                        "confidence": 0.72,
-                        "matched_question": question,
-                        "category": "general",
-                        "source": "wikipedia",
-                    }
+            # Try with extracted topic first
+            answer = await search_wikipedia(topic, client)
 
-            # If direct failed, search for it
-            search_response = await client.get(
-                "https://en.wikipedia.org/w/api.php",
-                params={
-                    "action": "query",
-                    "list": "search",
-                    "srsearch": topic,
-                    "format": "json",
-                    "srlimit": "3",
-                    "utf8": "1",
-                },
-                timeout=8.0,
-            )
-            search_data = search_response.json()
-            results = search_data.get("query", {}).get("search", [])
+            # If that fails try the full question
+            if not answer:
+                answer = await search_wikipedia(question, client)
 
-            if not results:
-                return None
-
-            # Try each result until we get a good answer
-            for result in results:
-                title = result["title"]
-                page_response = await client.get(
-                    f"https://en.wikipedia.org/api/rest_v1/page/summary/{title}",
-                    timeout=8.0,
-                    follow_redirects=True,
-                )
-                if page_response.status_code == 200:
-                    page_data = page_response.json()
-                    extract = page_data.get("extract", "")
-                    if extract and len(extract) > 40:
-                        sentences = extract.split(". ")
-                        answer = ". ".join(sentences[:3]).strip()
-                        if not answer.endswith("."):
-                            answer += "."
-                        return {
-                            "answer": answer,
-                            "confidence": 0.65,
-                            "matched_question": question,
-                            "category": "general",
-                            "source": "wikipedia",
-                        }
+            if answer:
+                return {
+                    "answer": answer,
+                    "confidence": 0.68,
+                    "matched_question": question,
+                    "category": "general",
+                    "source": "wikipedia",
+                }
     except Exception as e:
         print(f"Wikipedia error: {e}")
     return None
 
 
 async def ask_duckduckgo(question: str) -> dict | None:
-    """Try DuckDuckGo Instant Answer API — completely free."""
+    """DuckDuckGo Instant Answer API — free backup."""
     try:
         async with httpx.AsyncClient() as client:
             response = await client.get(
@@ -213,9 +215,9 @@ async def ask_duckduckgo(question: str) -> dict | None:
             if answer and len(answer) > 30:
                 return {
                     "answer": answer,
-                    "confidence": 0.70,
+                    "confidence": 0.65,
                     "matched_question": question,
-                    "category": data.get("AbstractSource", "general").lower(),
+                    "category": "general",
                     "source": "duckduckgo",
                 }
     except Exception as e:
@@ -268,12 +270,12 @@ async def ask(payload: AskRequest):
             source="knowledge_base",
         )
 
-    # Step 2 — Wikipedia (free, answers almost anything)
+    # Step 2 — Wikipedia opensearch (handles everyday words)
     wiki_result = await ask_wikipedia(payload.question)
     if wiki_result:
         return AskResponse(**wiki_result)
 
-    # Step 3 — DuckDuckGo (free backup)
+    # Step 3 — DuckDuckGo backup
     ddg_result = await ask_duckduckgo(payload.question)
     if ddg_result:
         return AskResponse(**ddg_result)
