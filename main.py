@@ -1,13 +1,12 @@
 """
 NLP Question Answering API — FastAPI Backend
-TF-IDF for known questions + Wikipedia/DuckDuckGo for everything else
-Completely FREE — no API key needed
+TF-IDF + Wikipedia fallback — 100% Free
 """
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, validator
-import json, os, math, string, httpx
+import json, os, math, string, httpx, re
 from collections import Counter
 from typing import Optional
 from dotenv import load_dotenv
@@ -94,6 +93,103 @@ def find_best_answer(question, top_k=1):
     } for score, idx in scored[:top_k]]
 
 
+def extract_topic(question: str) -> str:
+    """Extract the main topic from a question for better search."""
+    question = question.lower().strip()
+    # Remove question words to get the core topic
+    patterns = [
+        r"^what is (a |an |the )?",
+        r"^what are (a |an |the )?",
+        r"^who is (a |an |the )?",
+        r"^who was (a |an |the )?",
+        r"^how does (a |an |the )?",
+        r"^how do (a |an |the )?",
+        r"^where is (a |an |the )?",
+        r"^when (was|is|did) (a |an |the )?",
+        r"^define (a |an |the )?",
+        r"^tell me about (a |an |the )?",
+        r"^explain (a |an |the )?",
+    ]
+    for pattern in patterns:
+        question = re.sub(pattern, "", question)
+    return question.strip().rstrip("?").strip()
+
+
+async def ask_wikipedia(question: str) -> dict | None:
+    """Search Wikipedia for any question — completely free."""
+    try:
+        topic = extract_topic(question)
+        async with httpx.AsyncClient() as client:
+
+            # First try direct page summary
+            summary_response = await client.get(
+                f"https://en.wikipedia.org/api/rest_v1/page/summary/{httpx.URL(topic)}",
+                timeout=8.0,
+                follow_redirects=True,
+            )
+            if summary_response.status_code == 200:
+                data = summary_response.json()
+                extract = data.get("extract", "")
+                if extract and len(extract) > 40:
+                    sentences = extract.split(". ")
+                    answer = ". ".join(sentences[:3]).strip()
+                    if not answer.endswith("."):
+                        answer += "."
+                    return {
+                        "answer": answer,
+                        "confidence": 0.72,
+                        "matched_question": question,
+                        "category": "general",
+                        "source": "wikipedia",
+                    }
+
+            # If direct failed, search for it
+            search_response = await client.get(
+                "https://en.wikipedia.org/w/api.php",
+                params={
+                    "action": "query",
+                    "list": "search",
+                    "srsearch": topic,
+                    "format": "json",
+                    "srlimit": "3",
+                    "utf8": "1",
+                },
+                timeout=8.0,
+            )
+            search_data = search_response.json()
+            results = search_data.get("query", {}).get("search", [])
+
+            if not results:
+                return None
+
+            # Try each result until we get a good answer
+            for result in results:
+                title = result["title"]
+                page_response = await client.get(
+                    f"https://en.wikipedia.org/api/rest_v1/page/summary/{title}",
+                    timeout=8.0,
+                    follow_redirects=True,
+                )
+                if page_response.status_code == 200:
+                    page_data = page_response.json()
+                    extract = page_data.get("extract", "")
+                    if extract and len(extract) > 40:
+                        sentences = extract.split(". ")
+                        answer = ". ".join(sentences[:3]).strip()
+                        if not answer.endswith("."):
+                            answer += "."
+                        return {
+                            "answer": answer,
+                            "confidence": 0.65,
+                            "matched_question": question,
+                            "category": "general",
+                            "source": "wikipedia",
+                        }
+    except Exception as e:
+        print(f"Wikipedia error: {e}")
+    return None
+
+
 async def ask_duckduckgo(question: str) -> dict | None:
     """Try DuckDuckGo Instant Answer API — completely free."""
     try:
@@ -112,70 +208,18 @@ async def ask_duckduckgo(question: str) -> dict | None:
             answer = (
                 data.get("AbstractText") or
                 data.get("Answer") or
-                data.get("Definition") or
-                ""
+                data.get("Definition") or ""
             )
             if answer and len(answer) > 30:
                 return {
                     "answer": answer,
-                    "confidence": 0.7,
+                    "confidence": 0.70,
                     "matched_question": question,
                     "category": data.get("AbstractSource", "general").lower(),
                     "source": "duckduckgo",
                 }
-    except Exception:
-        pass
-    return None
-
-
-async def ask_wikipedia(question: str) -> dict | None:
-    """Try Wikipedia search API — completely free."""
-    try:
-        async with httpx.AsyncClient() as client:
-            # Search for the topic
-            search_response = await client.get(
-                "https://en.wikipedia.org/w/api.php",
-                params={
-                    "action": "query",
-                    "list": "search",
-                    "srsearch": question,
-                    "format": "json",
-                    "srlimit": "1",
-                },
-                timeout=8.0,
-            )
-            search_data = search_response.json()
-            results = search_data.get("query", {}).get("search", [])
-
-            if not results:
-                return None
-
-            title = results[0]["title"]
-
-            # Get the summary of the top result
-            summary_response = await client.get(
-                f"https://en.wikipedia.org/api/rest_v1/page/summary/{title}",
-                timeout=8.0,
-            )
-            summary_data = summary_response.json()
-            extract = summary_data.get("extract", "")
-
-            if extract and len(extract) > 50:
-                # Keep it to 3 sentences max
-                sentences = extract.split(". ")
-                short_answer = ". ".join(sentences[:3])
-                if not short_answer.endswith("."):
-                    short_answer += "."
-
-                return {
-                    "answer": short_answer,
-                    "confidence": 0.65,
-                    "matched_question": question,
-                    "category": "general",
-                    "source": "wikipedia",
-                }
-    except Exception:
-        pass
+    except Exception as e:
+        print(f"DuckDuckGo error: {e}")
     return None
 
 
@@ -212,7 +256,7 @@ def health():
 
 @app.post("/ask", response_model=AskResponse)
 async def ask(payload: AskRequest):
-    # Step 1 — Try knowledge base first (instant, free)
+    # Step 1 — Knowledge base (instant, always free)
     results = find_best_answer(payload.question)
     if results and results[0]["confidence"] >= 0.15:
         best = results[0]
@@ -224,15 +268,15 @@ async def ask(payload: AskRequest):
             source="knowledge_base",
         )
 
-    # Step 2 — Try DuckDuckGo (free, no key)
-    ddg_result = await ask_duckduckgo(payload.question)
-    if ddg_result:
-        return AskResponse(**ddg_result)
-
-    # Step 3 — Try Wikipedia (free, no key)
+    # Step 2 — Wikipedia (free, answers almost anything)
     wiki_result = await ask_wikipedia(payload.question)
     if wiki_result:
         return AskResponse(**wiki_result)
+
+    # Step 3 — DuckDuckGo (free backup)
+    ddg_result = await ask_duckduckgo(payload.question)
+    if ddg_result:
+        return AskResponse(**ddg_result)
 
     # Step 4 — Nothing found
     raise HTTPException(
