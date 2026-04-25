@@ -1,29 +1,22 @@
 """
 NLP Question Answering API — FastAPI Backend
-Supports: TF-IDF retrieval-based QA + optional Claude API fallback
+TF-IDF for known questions + AI fallback for everything else
 """
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, validator
-import json
-import os
-import re
-import math
-import string
+import json, os, math, string, httpx
 from collections import Counter
 from typing import Optional
 from dotenv import load_dotenv
 
 load_dotenv()
 
-app = FastAPI(
-    title="NLP QA API",
-    description="Natural Language Question Answering using TF-IDF + cosine similarity",
-    version="1.0.0",
-)
+ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
 
-# ── CORS ──────────────────────────────────────────────────────────────────────
+app = FastAPI(title="NLP QA API", version="1.0.0")
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -32,18 +25,14 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-
-# ── Data Layer ────────────────────────────────────────────────────────────────
 KNOWLEDGE_BASE_PATH = os.getenv("KB_PATH", "knowledge_base.json")
 
-def load_knowledge_base() -> list[dict]:
+def load_knowledge_base():
     with open(KNOWLEDGE_BASE_PATH, "r", encoding="utf-8") as f:
         return json.load(f)
 
-knowledge_base: list[dict] = load_knowledge_base()
+knowledge_base = load_knowledge_base()
 
-
-# ── NLP Utilities ─────────────────────────────────────────────────────────────
 STOPWORDS = {
     "a","an","the","is","it","in","on","at","to","for","of","and",
     "or","but","not","with","this","that","are","was","were","be",
@@ -53,36 +42,29 @@ STOPWORDS = {
     "who","whom","whose","about","from","by","as","so","if","then",
 }
 
-def preprocess(text: str) -> list[str]:
-    """Lowercase, remove punctuation, tokenize, remove stopwords."""
-    text = text.lower()
-    text = text.translate(str.maketrans("", "", string.punctuation))
-    tokens = text.split()
-    return [t for t in tokens if t not in STOPWORDS and len(t) > 1]
+def preprocess(text):
+    text = text.lower().translate(str.maketrans("", "", string.punctuation))
+    return [t for t in text.split() if t not in STOPWORDS and len(t) > 1]
 
-
-def compute_tf(tokens: list[str]) -> dict[str, float]:
+def compute_tf(tokens):
     count = Counter(tokens)
     total = len(tokens) or 1
     return {term: freq / total for term, freq in count.items()}
 
-
-def compute_idf(corpus: list[list[str]]) -> dict[str, float]:
+def compute_idf(corpus):
     N = len(corpus)
-    idf: dict[str, float] = {}
+    idf = {}
     all_terms = set(t for doc in corpus for t in doc)
     for term in all_terms:
         df = sum(1 for doc in corpus if term in doc)
         idf[term] = math.log((N + 1) / (df + 1)) + 1
     return idf
 
-
-def tfidf_vector(tokens: list[str], idf: dict[str, float]) -> dict[str, float]:
+def tfidf_vector(tokens, idf):
     tf = compute_tf(tokens)
     return {term: tf_val * idf.get(term, 1.0) for term, tf_val in tf.items()}
 
-
-def cosine_similarity(vec_a: dict, vec_b: dict) -> float:
+def cosine_similarity(vec_a, vec_b):
     common = set(vec_a) & set(vec_b)
     if not common:
         return 0.0
@@ -93,35 +75,57 @@ def cosine_similarity(vec_a: dict, vec_b: dict) -> float:
         return 0.0
     return dot / (mag_a * mag_b)
 
-
-# ── Pre-build TF-IDF index ────────────────────────────────────────────────────
 _corpus_tokens = [preprocess(item["question"]) for item in knowledge_base]
 _idf = compute_idf(_corpus_tokens)
 _doc_vectors = [tfidf_vector(tokens, _idf) for tokens in _corpus_tokens]
 
-
-def find_best_answer(question: str, top_k: int = 1) -> list[dict]:
+def find_best_answer(question, top_k=1):
     q_tokens = preprocess(question)
     q_vec = tfidf_vector(q_tokens, _idf)
-
-    scored = []
-    for idx, doc_vec in enumerate(_doc_vectors):
-        score = cosine_similarity(q_vec, doc_vec)
-        scored.append((score, idx))
-
-    scored.sort(key=lambda x: x[0], reverse=True)
-    results = []
-    for score, idx in scored[:top_k]:
-        results.append({
-            "question": knowledge_base[idx]["question"],
-            "answer": knowledge_base[idx]["answer"],
-            "category": knowledge_base[idx].get("category", "general"),
-            "confidence": round(score, 4),
-        })
-    return results
+    scored = sorted(
+        [(cosine_similarity(q_vec, doc_vec), idx) for idx, doc_vec in enumerate(_doc_vectors)],
+        reverse=True
+    )
+    return [{
+        "question": knowledge_base[idx]["question"],
+        "answer": knowledge_base[idx]["answer"],
+        "category": knowledge_base[idx].get("category", "general"),
+        "confidence": round(score, 4),
+    } for score, idx in scored[:top_k]]
 
 
-# ── Schemas ───────────────────────────────────────────────────────────────────
+async def ask_ai(question: str) -> dict:
+    """Call Claude AI to answer any question not in knowledge base."""
+    if not ANTHROPIC_API_KEY:
+        raise HTTPException(status_code=503, detail="AI service not configured.")
+
+    async with httpx.AsyncClient() as client:
+        response = await client.post(
+            "https://api.anthropic.com/v1/messages",
+            headers={
+                "x-api-key": ANTHROPIC_API_KEY,
+                "anthropic-version": "2023-06-01",
+                "content-type": "application/json",
+            },
+            json={
+                "model": "claude-haiku-4-5-20251001",
+                "max_tokens": 400,
+                "system": "You are a helpful Q&A assistant. Answer questions clearly and concisely in 2-4 sentences. Be accurate and informative.",
+                "messages": [{"role": "user", "content": question}],
+            },
+            timeout=15.0,
+        )
+        data = response.json()
+        answer = data["content"][0]["text"]
+        return {
+            "answer": answer,
+            "confidence": 0.75,
+            "matched_question": question,
+            "category": "general",
+            "source": "ai",
+        }
+
+
 class AskRequest(BaseModel):
     question: str
     top_k: Optional[int] = 1
@@ -132,13 +136,7 @@ class AskRequest(BaseModel):
         if not v:
             raise ValueError("Question cannot be empty")
         if len(v) > 500:
-            raise ValueError("Question must be ≤ 500 characters")
-        return v
-
-    @validator("top_k")
-    def top_k_range(cls, v):
-        if v is not None and not (1 <= v <= 5):
-            raise ValueError("top_k must be between 1 and 5")
+            raise ValueError("Question must be 500 characters or less")
         return v
 
 
@@ -150,44 +148,37 @@ class AskResponse(BaseModel):
     source: str = "knowledge_base"
 
 
-# ── Routes ────────────────────────────────────────────────────────────────────
-@app.get("/", tags=["health"])
+@app.get("/")
 def root():
     return {"status": "ok", "kb_size": len(knowledge_base)}
 
-
-@app.get("/health", tags=["health"])
+@app.get("/health")
 def health():
     return {"status": "healthy", "kb_entries": len(knowledge_base)}
 
 
-@app.post("/ask", response_model=AskResponse, tags=["qa"])
-def ask(payload: AskRequest):
-    """
-    Accept a natural-language question and return the best-matching answer
-    from the knowledge base using TF-IDF cosine similarity.
-    """
-    results = find_best_answer(payload.question, top_k=payload.top_k or 1)
+@app.post("/ask", response_model=AskResponse)
+async def ask(payload: AskRequest):
+    results = find_best_answer(payload.question)
 
-    if not results or results[0]["confidence"] < 0.05:
-        raise HTTPException(
-            status_code=404,
-            detail="No confident answer found. Try rephrasing your question.",
+    # If TF-IDF finds a confident answer use it
+    if results and results[0]["confidence"] >= 0.15:
+        best = results[0]
+        return AskResponse(
+            answer=best["answer"],
+            confidence=best["confidence"],
+            matched_question=best["question"],
+            category=best["category"],
+            source="knowledge_base",
         )
 
-    best = results[0]
-    return AskResponse(
-        answer=best["answer"],
-        confidence=best["confidence"],
-        matched_question=best["question"],
-        category=best["category"],
-        source="knowledge_base",
-    )
+    # Otherwise use AI to answer anything
+    ai_result = await ask_ai(payload.question)
+    return AskResponse(**ai_result)
 
 
-@app.get("/questions", tags=["kb"])
+@app.get("/questions")
 def list_questions(category: Optional[str] = None):
-    """Return all questions in the knowledge base (optionally filtered by category)."""
     data = knowledge_base
     if category:
         data = [item for item in data if item.get("category") == category]
