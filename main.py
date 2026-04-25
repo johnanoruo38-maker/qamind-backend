@@ -1,6 +1,7 @@
 """
 NLP Question Answering API — FastAPI Backend
-TF-IDF for known questions + AI fallback for everything else
+TF-IDF for known questions + Wikipedia/DuckDuckGo for everything else
+Completely FREE — no API key needed
 """
 
 from fastapi import FastAPI, HTTPException
@@ -12,8 +13,6 @@ from typing import Optional
 from dotenv import load_dotenv
 
 load_dotenv()
-
-ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
 
 app = FastAPI(title="NLP QA API", version="1.0.0")
 
@@ -83,7 +82,8 @@ def find_best_answer(question, top_k=1):
     q_tokens = preprocess(question)
     q_vec = tfidf_vector(q_tokens, _idf)
     scored = sorted(
-        [(cosine_similarity(q_vec, doc_vec), idx) for idx, doc_vec in enumerate(_doc_vectors)],
+        [(cosine_similarity(q_vec, doc_vec), idx)
+         for idx, doc_vec in enumerate(_doc_vectors)],
         reverse=True
     )
     return [{
@@ -94,36 +94,89 @@ def find_best_answer(question, top_k=1):
     } for score, idx in scored[:top_k]]
 
 
-async def ask_ai(question: str) -> dict:
-    """Call Claude AI to answer any question not in knowledge base."""
-    if not ANTHROPIC_API_KEY:
-        raise HTTPException(status_code=503, detail="AI service not configured.")
+async def ask_duckduckgo(question: str) -> dict | None:
+    """Try DuckDuckGo Instant Answer API — completely free."""
+    try:
+        async with httpx.AsyncClient() as client:
+            response = await client.get(
+                "https://api.duckduckgo.com/",
+                params={
+                    "q": question,
+                    "format": "json",
+                    "no_html": "1",
+                    "skip_disambig": "1",
+                },
+                timeout=8.0,
+            )
+            data = response.json()
+            answer = (
+                data.get("AbstractText") or
+                data.get("Answer") or
+                data.get("Definition") or
+                ""
+            )
+            if answer and len(answer) > 30:
+                return {
+                    "answer": answer,
+                    "confidence": 0.7,
+                    "matched_question": question,
+                    "category": data.get("AbstractSource", "general").lower(),
+                    "source": "duckduckgo",
+                }
+    except Exception:
+        pass
+    return None
 
-    async with httpx.AsyncClient() as client:
-        response = await client.post(
-            "https://api.anthropic.com/v1/messages",
-            headers={
-                "x-api-key": ANTHROPIC_API_KEY,
-                "anthropic-version": "2023-06-01",
-                "content-type": "application/json",
-            },
-            json={
-                "model": "claude-haiku-4-5-20251001",
-                "max_tokens": 400,
-                "system": "You are a helpful Q&A assistant. Answer questions clearly and concisely in 2-4 sentences. Be accurate and informative.",
-                "messages": [{"role": "user", "content": question}],
-            },
-            timeout=15.0,
-        )
-        data = response.json()
-        answer = data["content"][0]["text"]
-        return {
-            "answer": answer,
-            "confidence": 0.75,
-            "matched_question": question,
-            "category": "general",
-            "source": "ai",
-        }
+
+async def ask_wikipedia(question: str) -> dict | None:
+    """Try Wikipedia search API — completely free."""
+    try:
+        async with httpx.AsyncClient() as client:
+            # Search for the topic
+            search_response = await client.get(
+                "https://en.wikipedia.org/w/api.php",
+                params={
+                    "action": "query",
+                    "list": "search",
+                    "srsearch": question,
+                    "format": "json",
+                    "srlimit": "1",
+                },
+                timeout=8.0,
+            )
+            search_data = search_response.json()
+            results = search_data.get("query", {}).get("search", [])
+
+            if not results:
+                return None
+
+            title = results[0]["title"]
+
+            # Get the summary of the top result
+            summary_response = await client.get(
+                f"https://en.wikipedia.org/api/rest_v1/page/summary/{title}",
+                timeout=8.0,
+            )
+            summary_data = summary_response.json()
+            extract = summary_data.get("extract", "")
+
+            if extract and len(extract) > 50:
+                # Keep it to 3 sentences max
+                sentences = extract.split(". ")
+                short_answer = ". ".join(sentences[:3])
+                if not short_answer.endswith("."):
+                    short_answer += "."
+
+                return {
+                    "answer": short_answer,
+                    "confidence": 0.65,
+                    "matched_question": question,
+                    "category": "general",
+                    "source": "wikipedia",
+                }
+    except Exception:
+        pass
+    return None
 
 
 class AskRequest(BaseModel):
@@ -159,9 +212,8 @@ def health():
 
 @app.post("/ask", response_model=AskResponse)
 async def ask(payload: AskRequest):
+    # Step 1 — Try knowledge base first (instant, free)
     results = find_best_answer(payload.question)
-
-    # If TF-IDF finds a confident answer use it
     if results and results[0]["confidence"] >= 0.15:
         best = results[0]
         return AskResponse(
@@ -172,9 +224,21 @@ async def ask(payload: AskRequest):
             source="knowledge_base",
         )
 
-    # Otherwise use AI to answer anything
-    ai_result = await ask_ai(payload.question)
-    return AskResponse(**ai_result)
+    # Step 2 — Try DuckDuckGo (free, no key)
+    ddg_result = await ask_duckduckgo(payload.question)
+    if ddg_result:
+        return AskResponse(**ddg_result)
+
+    # Step 3 — Try Wikipedia (free, no key)
+    wiki_result = await ask_wikipedia(payload.question)
+    if wiki_result:
+        return AskResponse(**wiki_result)
+
+    # Step 4 — Nothing found
+    raise HTTPException(
+        status_code=404,
+        detail="No answer found. Try rephrasing your question.",
+    )
 
 
 @app.get("/questions")
