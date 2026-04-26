@@ -378,5 +378,1120 @@
     "question": "What is the Pythagorean theorem?",
     "answer": "The Pythagorean theorem states that in a right-angled triangle, the square of the hypotenuse equals the sum of squares of the other two sides. Written as a² + b² = c² where c is the hypotenuse. It is fundamental in geometry, physics, and computer graphics.",
     "category": "mathematics"
+  },
+  {
+    "question": "What is the capital of Nigeria?",
+    "answer": "The capital of Nigeria is Abuja. It became the capital in 1991, replacing Lagos. Abuja is located in the center of the country and was purpose-built to serve as the nation's political and administrative capital.",
+    "category": "general"
+  },
+  {
+    "question": "What is the capital of France?",
+    "answer": "The capital of France is Paris. It is the largest city in France and one of the most visited cities in the world, known for landmarks like the Eiffel Tower, the Louvre, and Notre-Dame Cathedral.",
+    "category": "general"
+  },
+  {
+    "question": "What is the capital of USA?",
+    "answer": "The capital of the United States is Washington D.C. It is the seat of the federal government and home to landmarks like the White House, the Capitol Building, and the Lincoln Memorial.",
+    "category": "general"
+  },
+  {
+    "question": "What is the capital of England?",
+    "answer": "The capital of England and the United Kingdom is London. It is one of the world's leading financial, cultural, and political centers, home to Buckingham Palace, the Tower of London, and the Houses of Parliament.",
+    "category": "general"
+  },
+  {
+    "question": "What is the capital of China?",
+    "answer": "The capital of China is Beijing. It is the political and cultural center of China with a history of over 3,000 years, home to the Forbidden City, Tiananmen Square, and the Great Wall nearby.",
+    "category": "general"
+  },
+  {
+    "question": "What is the capital of Germany?",
+    "answer": "The capital of Germany is Berlin. It is the largest city in Germany and a major center of politics, culture, and history in Europe, known for the Brandenburg Gate and the Berlin Wall Memorial.",
+    "category": "general"
+  },
+  {
+    "question": "What is the capital of Japan?",
+    "answer": "The capital of Japan is Tokyo. It is the most populous metropolitan area in the world and a global center of technology, finance, and culture, known for its blend of modern and traditional Japanese life.",
+    "category": "general"
+  },
+  {
+    "question": "What is the capital of India?",
+    "answer": "The capital of India is New Delhi. It is the seat of the Indian government and is located within the National Capital Territory of Delhi, one of the most populous urban areas in the world.",
+    "category": "general"
+  },
+  {
+    "question": "What is the capital of Brazil?",
+    "answer": "The capital of Brazil is Brasilia. It was purpose-built as the capital and officially inaugurated in 1960. It is known for its modernist architecture designed by Oscar Niemeyer.",
+    "category": "general"
+  },
+  {
+    "question": "What is the capital of South Africa?",
+    "answer": "South Africa has three capitals. Pretoria is the administrative capital, Cape Town is the legislative capital, and Bloemfontein is the judicial capital. This unique arrangement reflects South Africa's federal structure.",
+    "category": "general"
+  },
+  {
+    "question": "What is the largest country in the world?",
+    "answer": "Russia is the largest country in the world by land area, covering approximately 17.1 million square kilometers. It spans across eleven time zones and covers more than one eighth of Earth's inhabited land area.",
+    "category": "general"
+  },
+  {
+    "question": "What is the smallest country in the world?",
+    "answer": "Vatican City is the smallest country in the world, covering just 0.44 square kilometers within Rome, Italy. It is the headquarters of the Roman Catholic Church and home to the Pope.",
+    "category": "general"
+  },
+  {
+    "question": "What is the largest ocean in the world?",
+    "answer": "The Pacific Ocean is the largest ocean in the world, covering more than 165 million square kilometers. It is larger than all of Earth's landmasses combined and contains more than half of the world's ocean water.",
+    "category": "general"
+  },
+  {
+    "question": "What is the longest river in the world?",
+    "answer": "The Nile River in Africa is generally considered the longest river in the world, stretching approximately 6,650 kilometers. It flows northward through northeastern Africa and empties into the Mediterranean Sea.",
+    "category": "general"
+  },
+  {
+    "question": "What is the highest mountain in the world?",
+    "answer": "Mount Everest is the highest mountain in the world, standing at 8,848.86 meters above sea level. It is located in the Himalayas on the border between Nepal and Tibet and was first summited in 1953 by Edmund Hillary and Tenzing Norgay.",
+    "category": "general"
+  },
+  {
+    "question": "What is the largest continent?",
+    "answer": "Asia is the largest continent by both area and population. It covers about 44.6 million square kilometers and is home to over 4.7 billion people, representing about 60 percent of the world's population.",
+    "category": "general"
+  },
+  {
+    "question": "What is the smallest continent?",
+    "answer": "Australia is the smallest continent in the world, covering approximately 7.7 million square kilometers. It is also the only continent that is also a country, officially known as the Commonwealth of Australia.",
+    "category": "general"
+  },
+  {
+    "question": "How many continents are there?",
+    "answer": "There are seven continents on Earth: Africa, Antarctica, Asia, Australia, Europe, North America, and South America. Some geographic models combine Europe and Asia into Eurasia or the Americas into one continent.",
+    "category": "general"
+  },
+  {
+    "question": "How many countries are in the world?",
+    "answer": "There are 195 countries in the world, including 193 United Nations member states and 2 observer states, the Vatican and Palestine. The number can vary slightly depending on political recognition.",
+    "category": "general"
+  },
+  {
+    "question": "What is the most spoken language in the world?",
+    "answer": "Mandarin Chinese is the most spoken language by native speakers, with about 920 million speakers. English has the most total speakers when including second language speakers, making it the global language of business and communication.",
+    "category": "general"
+  },
+  {
+    "question": "What is the most populated country?",
+    "answer": "India is the most populated country in the world, surpassing China in 2023 with a population of over 1.4 billion people. India's young population and high birth rate contributed to it becoming the world's most populous nation.",
+    "category": "general"
+  },
+  {
+    "question": "What is the hottest place on Earth?",
+    "answer": "Death Valley in California, USA holds the record for the hottest air temperature ever recorded, reaching 56.7 degrees Celsius in 1913. The Lut Desert in Iran is also one of the hottest surface temperatures on Earth.",
+    "category": "general"
+  },
+  {
+    "question": "What is the coldest place on Earth?",
+    "answer": "Antarctica is the coldest continent on Earth. The lowest temperature ever recorded was minus 89.2 degrees Celsius at the Soviet Vostok Station in Antarctica in 1983.",
+    "category": "general"
+  },
+  {
+    "question": "How old is the Earth?",
+    "answer": "Earth is approximately 4.54 billion years old. This age is determined through radiometric dating of meteorites and the oldest known rocks and minerals on Earth.",
+    "category": "science"
+  },
+  {
+    "question": "How far is the sun from the earth?",
+    "answer": "The Sun is approximately 149.6 million kilometers or 93 million miles from Earth. This distance is called one Astronomical Unit (AU) and light from the Sun takes about 8 minutes to reach Earth.",
+    "category": "science"
+  },
+  {
+    "question": "How many planets are in the solar system?",
+    "answer": "There are eight planets in our solar system: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune. Pluto was reclassified as a dwarf planet in 2006.",
+    "category": "science"
+  },
+  {
+    "question": "What is the speed of sound?",
+    "answer": "The speed of sound in dry air at 20 degrees Celsius is approximately 343 meters per second or 1,235 kilometers per hour. Sound travels faster in water and even faster in solids.",
+    "category": "science"
+  },
+  {
+    "question": "What is the boiling point of water?",
+    "answer": "Water boils at 100 degrees Celsius or 212 degrees Fahrenheit at standard atmospheric pressure. At higher altitudes where air pressure is lower, water boils at a lower temperature.",
+    "category": "science"
+  },
+  {
+    "question": "What is the freezing point of water?",
+    "answer": "Water freezes at 0 degrees Celsius or 32 degrees Fahrenheit at standard atmospheric pressure. Below this temperature, liquid water turns into ice.",
+    "category": "science"
+  },
+  {
+    "question": "What is the human body temperature?",
+    "answer": "The average normal human body temperature is 37 degrees Celsius or 98.6 degrees Fahrenheit. Body temperature can vary slightly between individuals and throughout the day.",
+    "category": "science"
+  },
+  {
+    "question": "How many bones are in the human body?",
+    "answer": "The adult human body has 206 bones. Babies are born with about 270 to 300 bones, but many of these fuse together during childhood and adolescence.",
+    "category": "science"
+  },
+  {
+    "question": "How many organs are in the human body?",
+    "answer": "The human body has approximately 78 organs, though the exact number depends on how organs are defined. The five vital organs essential for survival are the brain, heart, kidneys, liver, and lungs.",
+    "category": "science"
+  },
+  {
+    "question": "What is the largest organ in the human body?",
+    "answer": "The skin is the largest organ in the human body, covering an area of about 2 square meters in adults. It protects the body from the environment, regulates temperature, and provides sensation.",
+    "category": "science"
+  },
+  {
+    "question": "How many teeth does an adult have?",
+    "answer": "An adult human typically has 32 teeth, including 8 incisors, 4 canines, 8 premolars, and 12 molars. The last four molars, called wisdom teeth, often need to be removed.",
+    "category": "science"
+  },
+  {
+    "question": "What is the fastest animal in the world?",
+    "answer": "The cheetah is the fastest land animal, reaching speeds of up to 112 kilometers per hour. In terms of all animals, the peregrine falcon is the fastest, diving at speeds exceeding 320 kilometers per hour.",
+    "category": "science"
+  },
+  {
+    "question": "What is the largest animal in the world?",
+    "answer": "The blue whale is the largest animal on Earth, reaching lengths of up to 30 meters and weights of up to 200 tonnes. It is also the loudest animal and has the largest heart of any living creature.",
+    "category": "science"
+  },
+  {
+    "question": "What is the smallest animal in the world?",
+    "answer": "The Etruscan shrew is considered the smallest mammal by mass, weighing just 1.8 grams. Among vertebrates, the Paedophryne amauensis frog from Papua New Guinea is the smallest known vertebrate animal.",
+    "category": "science"
+  },
+  {
+    "question": "How many hours are in a day?",
+    "answer": "There are 24 hours in a day. This is based on Earth's rotation on its axis, which takes approximately 24 hours to complete one full revolution relative to the Sun.",
+    "category": "general"
+  },
+  {
+    "question": "How many days are in a year?",
+    "answer": "There are 365 days in a regular year and 366 days in a leap year. A leap year occurs every four years to account for the extra quarter day it takes Earth to orbit the Sun.",
+    "category": "general"
+  },
+  {
+    "question": "How many weeks are in a year?",
+    "answer": "There are 52 weeks in a year, plus one or two extra days depending on whether it is a regular year or a leap year.",
+    "category": "general"
+  },
+  {
+    "question": "How many months are in a year?",
+    "answer": "There are 12 months in a year: January, February, March, April, May, June, July, August, September, October, November, and December.",
+    "category": "general"
+  },
+  {
+    "question": "What is the currency of Nigeria?",
+    "answer": "The currency of Nigeria is the Nigerian Naira, abbreviated as NGN and symbolized as ₦. It was introduced in 1973, replacing the Nigerian pound.",
+    "category": "general"
+  },
+  {
+    "question": "What is the currency of USA?",
+    "answer": "The currency of the United States is the US Dollar, abbreviated as USD and symbolized as $. It is the world's primary reserve currency and is used in international trade worldwide.",
+    "category": "general"
+  },
+  {
+    "question": "What is the currency of UK?",
+    "answer": "The currency of the United Kingdom is the British Pound Sterling, abbreviated as GBP and symbolized as £. It is one of the oldest currencies still in use and one of the most traded in the world.",
+    "category": "general"
+  },
+  {
+    "question": "What is the currency of Europe?",
+    "answer": "The Euro is the official currency of the Eurozone, which consists of 20 of the 27 European Union member states. It is abbreviated as EUR and symbolized as €, and is the second most traded currency in the world.",
+    "category": "general"
+  },
+  {
+    "question": "Who invented the telephone?",
+    "answer": "Alexander Graham Bell is credited with inventing the telephone in 1876. He was the first to be awarded a patent for the device, which allowed voice communication over electrical wires and revolutionized long-distance communication.",
+    "category": "history"
+  },
+  {
+    "question": "Who invented the light bulb?",
+    "answer": "Thomas Edison is widely credited with inventing the practical incandescent light bulb in 1879. He developed a bulb with a carbon filament that could burn for over 1,200 hours, making electric lighting practical for everyday use.",
+    "category": "history"
+  },
+  {
+    "question": "Who invented the internet?",
+    "answer": "The internet was developed by multiple people and organizations. Tim Berners-Lee invented the World Wide Web in 1989, while ARPANET, the foundation of the internet, was developed in the 1960s by the US Department of Defense.",
+    "category": "history"
+  },
+  {
+    "question": "Who invented the airplane?",
+    "answer": "The Wright Brothers, Orville and Wilbur Wright, invented and flew the first successful powered airplane on December 17, 1903, in Kitty Hawk, North Carolina. Their flight lasted 12 seconds and covered 37 meters.",
+    "category": "history"
+  },
+  {
+    "question": "Who invented the computer?",
+    "answer": "Charles Babbage is considered the father of the computer for designing the first mechanical computer, the Analytical Engine, in the 1830s. Modern electronic computers were developed by Alan Turing, John von Neumann, and others in the 1940s.",
+    "category": "history"
+  },
+  {
+    "question": "Who invented electricity?",
+    "answer": "Electricity was not invented but discovered and developed by many scientists. Benjamin Franklin demonstrated lightning is electrical in 1752, and Michael Faraday discovered electromagnetic induction in 1831, which led to electric generators.",
+    "category": "history"
+  },
+  {
+    "question": "Who is Albert Einstein?",
+    "answer": "Albert Einstein was a German-born theoretical physicist who developed the theory of relativity and contributed significantly to quantum mechanics. He is best known for the equation E=mc², and won the Nobel Prize in Physics in 1921.",
+    "category": "history"
+  },
+  {
+    "question": "Who is Isaac Newton?",
+    "answer": "Isaac Newton was an English mathematician, physicist, and astronomer who formulated the laws of motion and universal gravitation. He also developed calculus and made important discoveries in optics. He is widely regarded as one of the greatest scientists in history.",
+    "category": "history"
+  },
+  {
+    "question": "Who is Charles Darwin?",
+    "answer": "Charles Darwin was an English naturalist and biologist who developed the theory of evolution by natural selection. His 1859 book On the Origin of Species fundamentally changed our understanding of how life on Earth developed.",
+    "category": "history"
+  },
+  {
+    "question": "Who is Nikola Tesla?",
+    "answer": "Nikola Tesla was a Serbian-American inventor and engineer who made major contributions to the development of alternating current electrical systems. He is also known for his work on radio, X-rays, and wireless transmission of energy.",
+    "category": "history"
+  },
+  {
+    "question": "What is the United Nations?",
+    "answer": "The United Nations (UN) is an international organization founded in 1945 with 193 member states. Its main goals are to maintain international peace and security, promote human rights, foster social and economic development, and provide humanitarian aid.",
+    "category": "general"
+  },
+  {
+    "question": "What is the World Health Organization?",
+    "answer": "The World Health Organization (WHO) is a specialized agency of the United Nations responsible for international public health. It was founded in 1948 and coordinates global responses to health emergencies, sets health standards, and promotes health research.",
+    "category": "general"
+  },
+  {
+    "question": "What is the Olympic Games?",
+    "answer": "The Olympic Games is an international sporting event held every four years, alternating between the Summer and Winter Olympics. They bring together athletes from around the world to compete in various sports and promote peace and friendship.",
+    "category": "general"
+  },
+  {
+    "question": "What is the FIFA World Cup?",
+    "answer": "The FIFA World Cup is the international football championship contested by national teams, held every four years. It is the most widely viewed sporting event in the world, with billions of viewers watching the tournament.",
+    "category": "general"
+  },
+  {
+    "question": "What is democracy?",
+    "answer": "Democracy is a system of government where power is held by the people, either directly or through elected representatives. It is based on principles of political equality, majority rule, protection of minority rights, and freedom of expression.",
+    "category": "general"
+  },
+  {
+    "question": "What is capitalism?",
+    "answer": "Capitalism is an economic system where private individuals or businesses own the means of production and operate for profit. It is characterized by free markets, competition, and the price system determining the allocation of goods and services.",
+    "category": "general"
+  },
+  {
+    "question": "What is socialism?",
+    "answer": "Socialism is an economic and political system where the means of production are owned collectively, usually by the state or cooperatives. It emphasizes social equality, public ownership, and distribution of wealth according to contribution or need.",
+    "category": "general"
+  },
+  {
+    "question": "What is inflation?",
+    "answer": "Inflation is the rate at which the general level of prices for goods and services rises over time, decreasing purchasing power. Central banks attempt to control inflation through monetary policy, typically targeting a low and stable inflation rate.",
+    "category": "general"
+  },
+  {
+    "question": "What is GDP?",
+    "answer": "GDP stands for Gross Domestic Product. It is the total monetary value of all goods and services produced within a country in a specific time period. GDP is the most widely used measure of an economy's size and health.",
+    "category": "general"
+  },
+  {
+    "question": "What is a recession?",
+    "answer": "A recession is a period of economic decline characterized by falling GDP, rising unemployment, and reduced consumer spending, typically lasting at least two consecutive quarters. Recessions are a normal part of the economic cycle.",
+    "category": "general"
+  },
+  {
+    "question": "What is stock market?",
+    "answer": "A stock market is a marketplace where buyers and sellers trade shares of publicly listed companies. It allows companies to raise capital by selling shares and gives investors the opportunity to share in a company's profits and growth.",
+    "category": "general"
+  },
+  {
+    "question": "What is income tax?",
+    "answer": "Income tax is a tax imposed by governments on individuals and businesses based on their earnings. The tax collected is used to fund public services like healthcare, education, infrastructure, and national defense.",
+    "category": "general"
+  },
+  {
+    "question": "What is global warming?",
+    "answer": "Global warming is the long-term heating of Earth's climate system due to human activities, primarily the burning of fossil fuels which increases greenhouse gas concentrations in the atmosphere. It causes rising sea levels, extreme weather, and ecosystem disruption.",
+    "category": "science"
+  },
+  {
+    "question": "What is renewable energy?",
+    "answer": "Renewable energy is energy from naturally replenishing sources that are virtually inexhaustible, such as solar, wind, hydropower, geothermal, and biomass. Unlike fossil fuels, renewable energy produces little to no greenhouse gas emissions.",
+    "category": "science"
+  },
+  {
+    "question": "What is solar energy?",
+    "answer": "Solar energy is energy from the sun that is converted into electricity or heat using solar panels or collectors. It is one of the fastest growing renewable energy sources and is becoming increasingly cost-competitive with fossil fuels.",
+    "category": "science"
+  },
+  {
+    "question": "What is nuclear energy?",
+    "answer": "Nuclear energy is produced through nuclear fission, where the nucleus of a heavy atom like uranium is split to release enormous amounts of energy. It generates electricity with low carbon emissions but produces radioactive waste that requires careful management.",
+    "category": "science"
+  },
+  {
+    "question": "What is carbon dioxide?",
+    "answer": "Carbon dioxide (CO2) is a colorless, odorless gas produced by burning carbon-based fuels and by respiration. It is a greenhouse gas that traps heat in the atmosphere and plays a major role in climate change when present in excess.",
+    "category": "science"
+  },
+  {
+    "question": "What is the periodic table?",
+    "answer": "The periodic table is a tabular arrangement of chemical elements organized by atomic number, electron configuration, and chemical properties. It was created by Dmitri Mendeleev in 1869 and contains 118 confirmed elements.",
+    "category": "science"
+  },
+  {
+    "question": "What is an element?",
+    "answer": "A chemical element is a pure substance made up of only one type of atom, defined by its atomic number. There are 118 known elements, ranging from hydrogen, the lightest, to oganesson, the heaviest.",
+    "category": "science"
+  },
+  {
+    "question": "What is a molecule?",
+    "answer": "A molecule is the smallest unit of a substance that retains all the chemical properties of that substance. It consists of two or more atoms bonded together, for example water is made of two hydrogen atoms and one oxygen atom.",
+    "category": "science"
+  },
+  {
+    "question": "What is human rights?",
+    "answer": "Human rights are fundamental rights and freedoms that belong to every person regardless of nationality, gender, religion, or any other status. They include the right to life, freedom from torture, freedom of expression, and the right to education.",
+    "category": "general"
+  },
+  {
+    "question": "What is feminism?",
+    "answer": "Feminism is a range of social and political movements advocating for equal rights and opportunities for women. It addresses issues including gender discrimination, reproductive rights, domestic violence, equal pay, and women's representation in leadership.",
+    "category": "general"
+  },
+  {
+    "question": "What is social media?",
+    "answer": "Social media are online platforms and applications that enable users to create, share, and interact with content and connect with others. Popular platforms include Facebook, Instagram, Twitter, TikTok, and LinkedIn.",
+    "category": "technology"
+  },
+  {
+    "question": "What is e-commerce?",
+    "answer": "E-commerce is the buying and selling of goods and services over the internet. It has transformed retail by enabling businesses to reach global customers and allowing consumers to shop from anywhere. Major platforms include Amazon, eBay, and Alibaba.",
+    "category": "technology"
+  },
+  {
+    "question": "What is artificial intelligence ethics?",
+    "answer": "AI ethics is the field concerned with the moral implications and responsibilities in the development and use of artificial intelligence. It addresses issues like bias in algorithms, privacy, job displacement, accountability, and the long-term impact of AI on society.",
+    "category": "ai_ml"
+  },
+  {
+    "question": "What is a virus?",
+    "answer": "A virus is a microscopic infectious agent that can only replicate inside living cells of organisms. Viruses cause diseases ranging from the common cold and flu to more serious conditions like HIV, Ebola, and COVID-19.",
+    "category": "science"
+  },
+  {
+    "question": "What is COVID-19?",
+    "answer": "COVID-19 is an infectious disease caused by the SARS-CoV-2 coronavirus, first identified in Wuhan, China in late 2019. It spread globally, causing a pandemic that resulted in millions of deaths worldwide and significant social and economic disruption.",
+    "category": "science"
+  },
+  {
+    "question": "What is a vaccine?",
+    "answer": "A vaccine is a biological preparation that provides immunity against a specific disease by stimulating the immune system. Vaccines have eradicated or greatly reduced many deadly diseases including smallpox, polio, and measles.",
+    "category": "science"
+  },
+  {
+    "question": "What is diabetes?",
+    "answer": "Diabetes is a chronic disease that occurs when the body cannot properly regulate blood sugar levels. Type 1 diabetes is an autoimmune condition while Type 2 is related to lifestyle factors. Both require management through diet, exercise, and medication.",
+    "category": "science"
+  },
+  {
+    "question": "What is cancer?",
+    "answer": "Cancer is a group of diseases characterized by the uncontrolled growth and spread of abnormal cells. There are over 100 types of cancer, and it can affect virtually any part of the body. Treatment includes surgery, chemotherapy, and radiation therapy.",
+    "category": "science"
+  },
+  {
+    "question": "What is malaria?",
+    "answer": "Malaria is a life-threatening disease caused by Plasmodium parasites transmitted through the bites of infected female Anopheles mosquitoes. It is common in tropical regions and causes fever, chills, and anemia. It can be prevented with antimalarial drugs and mosquito nets.",
+    "category": "science"
+  },
+  {
+    "question": "What is HIV?",
+    "answer": "HIV (Human Immunodeficiency Virus) is a virus that attacks the immune system, potentially leading to AIDS (Acquired Immunodeficiency Syndrome). It is transmitted through contact with infected blood, sexual fluids, or breast milk. It can be managed with antiretroviral therapy.",
+    "category": "science"
+  },
+  {
+    "question": "What is mental health?",
+    "answer": "Mental health encompasses emotional, psychological, and social wellbeing. It affects how people think, feel, and act, and influences how they handle stress, relate to others, and make choices. Good mental health is essential at every stage of life.",
+    "category": "science"
+  },
+  {
+    "question": "What is meditation?",
+    "answer": "Meditation is a mind-body practice that involves focusing attention and eliminating distracting thoughts to achieve mental clarity and emotional calm. Regular meditation has been shown to reduce stress, improve concentration, and promote overall wellbeing.",
+    "category": "general"
+  },
+  {
+    "question": "What is yoga?",
+    "answer": "Yoga is a physical, mental, and spiritual practice that originated in ancient India. It combines physical postures, breathing exercises, and meditation to improve flexibility, strength, and mental clarity. It has become popular worldwide for health and wellness.",
+    "category": "general"
+  },
+  {
+    "question": "What is nutrition?",
+    "answer": "Nutrition is the science of how food affects the body. It involves the study of nutrients like carbohydrates, proteins, fats, vitamins, and minerals, and how they are used for energy, growth, and overall health.",
+    "category": "science"
+  },
+  {
+    "question": "What is a calorie?",
+    "answer": "A calorie is a unit of energy measurement used to express the nutritional value of food. The number of calories in food indicates how much energy the body can obtain from eating it. Adults typically need 2,000 to 2,500 calories per day.",
+    "category": "science"
+  },
+  {
+    "question": "What is obesity?",
+    "answer": "Obesity is a medical condition characterized by excessive body fat that increases the risk of health problems like heart disease, diabetes, and certain cancers. It is measured using Body Mass Index (BMI) and is influenced by diet, lifestyle, and genetics.",
+    "category": "science"
+  },
+  {
+    "question": "What is first aid?",
+    "answer": "First aid is the immediate assistance given to a person suffering from an injury or illness before professional medical help arrives. Basic first aid skills include CPR, wound care, treating burns, and managing choking.",
+    "category": "general"
+  },
+  {
+    "question": "What is CPR?",
+    "answer": "CPR (Cardiopulmonary Resuscitation) is an emergency procedure performed when someone's heart stops beating or they stop breathing. It combines chest compressions and rescue breaths to maintain blood circulation until medical help arrives.",
+    "category": "general"
+  },
+  {
+    "question": "What is the greenhouse effect?",
+    "answer": "The greenhouse effect is the process by which gases like carbon dioxide and methane trap heat from the sun in the Earth's atmosphere. While a natural amount is essential for life, excessive greenhouse gases from human activity are causing global warming.",
+    "category": "science"
+  },
+  {
+    "question": "What is biodiversity?",
+    "answer": "Biodiversity refers to the variety of life on Earth, including all plants, animals, fungi, and microorganisms. It encompasses genetic diversity within species, species diversity, and diversity of ecosystems. Biodiversity is essential for ecosystem stability and human wellbeing.",
+    "category": "science"
+  },
+  {
+    "question": "What is deforestation?",
+    "answer": "Deforestation is the large-scale clearing of forests for agriculture, logging, or development. It contributes to climate change, destroys wildlife habitats, reduces biodiversity, and disrupts the water cycle.",
+    "category": "science"
+  },
+  {
+    "question": "What is the food chain?",
+    "answer": "A food chain is a linear sequence showing how nutrients and energy pass from one organism to another. It typically starts with plants as producers, followed by herbivores, carnivores, and decomposers, showing who eats whom in an ecosystem.",
+    "category": "science"
+  },
+  {
+    "question": "What is migration?",
+    "answer": "Migration is the movement of people from one place to another, either within a country or across international borders. People migrate for reasons including economic opportunity, fleeing conflict or persecution, or environmental factors.",
+    "category": "general"
+  },
+  {
+    "question": "What is population growth?",
+    "answer": "Population growth is the increase in the number of people in a population over time. The world population reached 8 billion in 2022 and continues to grow, creating challenges for food security, healthcare, housing, and environmental sustainability.",
+    "category": "general"
+  },
+  {
+    "question": "What is urbanization?",
+    "answer": "Urbanization is the process by which more people move from rural areas to cities. It is driven by economic opportunities, better services, and industrial growth. More than half of the world's population now lives in urban areas.",
+    "category": "general"
+  },
+  {
+    "question": "What is globalization?",
+    "answer": "Globalization is the process of increasing interconnection and interdependence between countries through the exchange of goods, services, information, culture, and people. It has accelerated with advances in technology, transportation, and communication.",
+    "category": "general"
+  },
+  {
+    "question": "What is artificial general intelligence?",
+    "answer": "Artificial General Intelligence (AGI) refers to a hypothetical AI system that can perform any intellectual task that a human can do. Unlike current narrow AI systems that excel at specific tasks, AGI would have human-level reasoning and adaptability across all domains.",
+    "category": "ai_ml"
+  },
+  {
+    "question": "What is a microprocessor?",
+    "answer": "A microprocessor is an integrated circuit that contains the processing unit of a computer on a single chip. It executes instructions, performs calculations, and controls other hardware components. Modern microprocessors contain billions of transistors.",
+    "category": "technology"
+  },
+  {
+    "question": "What is Moore's law?",
+    "answer": "Moore's Law is the observation by Gordon Moore in 1965 that the number of transistors on a microchip doubles approximately every two years while costs halve. This trend has driven the rapid advancement of computing power for decades.",
+    "category": "technology"
+  },
+  {
+    "question": "What is open source software?",
+    "answer": "Open source software is software whose source code is publicly available for anyone to view, modify, and distribute. Popular examples include the Linux operating system, the Firefox browser, and the Python programming language.",
+    "category": "technology"
+  },
+  {
+    "question": "What is a programming language?",
+    "answer": "A programming language is a formal system of notation used to write instructions that a computer can execute. There are hundreds of programming languages including Python, Java, JavaScript, C++, and Ruby, each suited for different purposes.",
+    "category": "programming"
+  },
+  {
+    "question": "What is software engineering?",
+    "answer": "Software engineering is the systematic application of engineering principles to the design, development, testing, and maintenance of software. It combines computer science knowledge with engineering practices to build reliable and efficient software systems.",
+    "category": "programming"
+  },
+  {
+    "question": "What is quantum computing?",
+    "answer": "Quantum computing is a type of computation that uses quantum mechanical phenomena like superposition and entanglement to process information. Unlike classical computers that use bits, quantum computers use qubits, allowing them to solve certain complex problems exponentially faster.",
+    "category": "technology"
+  },
+  {
+    "question": "What is augmented reality?",
+    "answer": "Augmented reality (AR) is a technology that overlays digital information like images, sounds, and text onto the real world through a device screen or glasses. It differs from virtual reality in that it enhances the real world rather than replacing it.",
+    "category": "technology"
+  },
+  {
+    "question": "What is virtual reality?",
+    "answer": "Virtual reality (VR) is a simulated experience that immerses users in a completely digital environment using a headset. It is used in gaming, training simulations, medical therapy, and education.",
+    "category": "technology"
+  },
+  {
+    "question": "What is the metaverse?",
+    "answer": "The metaverse is a collective virtual shared space that combines physical and digital reality. It includes persistent online worlds where users interact through avatars, work, socialize, and engage in commerce using technologies like VR, AR, and blockchain.",
+    "category": "technology"
+  },
+  {
+    "question": "What is edge computing?",
+    "answer": "Edge computing is a distributed computing model that processes data closer to where it is generated rather than sending it to a centralized cloud server. It reduces latency and bandwidth usage and is important for IoT devices and real-time applications.",
+    "category": "cloud"
+  },
+  {
+    "question": "What is the Internet of Things?",
+    "answer": "The Internet of Things (IoT) refers to the network of physical devices embedded with sensors and software that connect and exchange data over the internet. Examples include smart home devices, wearables, industrial sensors, and connected vehicles.",
+    "category": "technology"
+  },
+  {
+    "question": "What is 5G?",
+    "answer": "5G is the fifth generation of mobile network technology, offering significantly faster speeds, lower latency, and greater capacity than 4G. It enables new technologies like autonomous vehicles, smart cities, and advanced IoT applications.",
+    "category": "technology"
+  },
+  {
+    "question": "What is a neural network architecture?",
+    "answer": "A neural network architecture refers to the structure and design of a neural network, including the number of layers, types of layers, and how neurons are connected. Common architectures include convolutional neural networks (CNNs) for images and recurrent neural networks (RNNs) for sequences.",
+    "category": "ai_ml"
+  },
+  {
+    "question": "What is transfer learning?",
+    "answer": "Transfer learning is a machine learning technique where a model trained on one task is reused as the starting point for a model on a different but related task. It reduces training time and data requirements significantly.",
+    "category": "ai_ml"
+  },
+  {
+    "question": "What is overfitting in machine learning?",
+    "answer": "Overfitting occurs when a machine learning model learns the training data too well, including its noise and outliers, causing it to perform poorly on new unseen data. It is addressed through techniques like regularization, dropout, and cross-validation.",
+    "category": "ai_ml"
+  },
+  {
+    "question": "What is underfitting in machine learning?",
+    "answer": "Underfitting occurs when a machine learning model is too simple to capture the underlying patterns in the data, resulting in poor performance on both training and test data. It can be addressed by using more complex models or adding more features.",
+    "category": "ai_ml"
+  },
+  {
+    "question": "What is a confusion matrix?",
+    "answer": "A confusion matrix is a table used to evaluate the performance of a classification model. It shows the number of true positives, true negatives, false positives, and false negatives, allowing calculation of metrics like accuracy, precision, and recall.",
+    "category": "ai_ml"
+  },
+  {
+    "question": "What is gradient descent?",
+    "answer": "Gradient descent is an optimization algorithm used to minimize the loss function in machine learning models. It iteratively adjusts model parameters in the direction of the steepest decrease in loss, helping the model learn from data.",
+    "category": "ai_ml"
+  },
+  {
+    "question": "What is a convolutional neural network?",
+    "answer": "A convolutional neural network (CNN) is a deep learning architecture designed for processing grid-like data such as images. It uses convolutional layers to automatically detect features like edges, textures, and objects, making it highly effective for image recognition tasks.",
+    "category": "ai_ml"
+  },
+  {
+    "question": "What is a recurrent neural network?",
+    "answer": "A recurrent neural network (RNN) is a type of neural network designed to work with sequential data by maintaining a memory of previous inputs. It is used in applications like speech recognition, language modeling, and time series prediction.",
+    "category": "ai_ml"
+  },
+  {
+    "question": "What is natural language generation?",
+    "answer": "Natural language generation (NLG) is a branch of AI that automatically produces human-readable text from structured data or other inputs. It is used in chatbots, automated report writing, and content generation systems.",
+    "category": "nlp"
+  },
+  {
+    "question": "What is sentiment analysis?",
+    "answer": "Sentiment analysis is an NLP technique used to identify and extract subjective information from text, such as opinions, emotions, and attitudes. It is widely used in social media monitoring, customer feedback analysis, and brand management.",
+    "category": "nlp"
+  },
+  {
+    "question": "What is named entity recognition?",
+    "answer": "Named entity recognition (NER) is an NLP task that identifies and classifies named entities in text into categories such as person names, organizations, locations, and dates. It is used in information extraction and document analysis.",
+    "category": "nlp"
+  },
+  {
+    "question": "What is word embedding?",
+    "answer": "Word embedding is a representation of words as dense numerical vectors in a continuous vector space where semantically similar words are mapped to nearby points. Popular techniques include Word2Vec, GloVe, and FastText.",
+    "category": "nlp"
+  },
+  {
+    "question": "What is a chatbot?",
+    "answer": "A chatbot is a software application designed to simulate conversation with humans through text or voice. Modern chatbots use NLP and machine learning to understand and respond to user queries and are used in customer service, healthcare, and education.",
+    "category": "ai_ml"
+  },
+  {
+    "question": "What is a generative adversarial network?",
+    "answer": "A generative adversarial network (GAN) is a machine learning framework where two neural networks, a generator and a discriminator, compete against each other. The generator creates fake data while the discriminator tries to detect it, resulting in increasingly realistic outputs.",
+    "category": "ai_ml"
+  },
+  {
+    "question": "What is federated learning?",
+    "answer": "Federated learning is a machine learning approach where a model is trained across multiple decentralized devices without sharing raw data. It preserves privacy by keeping data on local devices while still improving the global model.",
+    "category": "ai_ml"
+  },
+  {
+    "question": "What is explainable AI?",
+    "answer": "Explainable AI (XAI) refers to methods and techniques that make AI model decisions understandable to humans. It is important for building trust in AI systems, especially in high-stakes domains like healthcare, finance, and criminal justice.",
+    "category": "ai_ml"
+  },
+  {
+    "question": "What is a decision tree?",
+    "answer": "A decision tree is a supervised machine learning algorithm that splits data into branches based on feature values to make predictions. It is easy to interpret and visualize, making it popular for classification and regression tasks.",
+    "category": "ai_ml"
+  },
+  {
+    "question": "What is random forest?",
+    "answer": "Random forest is an ensemble machine learning algorithm that builds multiple decision trees and combines their outputs for more accurate and stable predictions. It reduces overfitting and works well on both classification and regression tasks.",
+    "category": "ai_ml"
+  },
+  {
+    "question": "What is support vector machine?",
+    "answer": "A support vector machine (SVM) is a supervised machine learning algorithm that finds the optimal boundary between classes in a dataset. It is effective for classification tasks, especially with high-dimensional data.",
+    "category": "ai_ml"
+  },
+  {
+    "question": "What is k-nearest neighbors?",
+    "answer": "K-nearest neighbors (KNN) is a simple machine learning algorithm that classifies a data point based on the majority class of its k closest neighbors in the training dataset. It requires no training phase but can be slow for large datasets.",
+    "category": "ai_ml"
+  },
+  {
+    "question": "What is logistic regression?",
+    "answer": "Logistic regression is a statistical model used for binary classification that estimates the probability of an outcome using a logistic function. Despite its name it is a classification algorithm used to predict categorical outcomes.",
+    "category": "ai_ml"
+  },
+  {
+    "question": "What is linear regression?",
+    "answer": "Linear regression is a statistical method that models the relationship between a dependent variable and one or more independent variables by fitting a linear equation. It is widely used for predicting continuous numerical values.",
+    "category": "ai_ml"
+  },
+  {
+    "question": "What is clustering in machine learning?",
+    "answer": "Clustering is an unsupervised machine learning technique that groups similar data points together without predefined labels. Popular algorithms include K-means, DBSCAN, and hierarchical clustering, used in customer segmentation and anomaly detection.",
+    "category": "ai_ml"
+  },
+  {
+    "question": "What is a data warehouse?",
+    "answer": "A data warehouse is a large centralized repository that stores structured data from multiple sources for analysis and reporting. It is optimized for read-heavy analytical queries and is used in business intelligence and decision making.",
+    "category": "data"
+  },
+  {
+    "question": "What is ETL?",
+    "answer": "ETL stands for Extract, Transform, Load. It is a data integration process that extracts data from source systems, transforms it into a suitable format, and loads it into a destination like a data warehouse for analysis.",
+    "category": "data"
+  },
+  {
+    "question": "What is a data lake?",
+    "answer": "A data lake is a centralized repository that stores large amounts of raw data in its native format until needed. Unlike data warehouses, data lakes can store structured, semi-structured, and unstructured data at massive scale.",
+    "category": "data"
+  },
+  {
+    "question": "What is Apache Spark?",
+    "answer": "Apache Spark is an open-source distributed computing framework designed for fast large-scale data processing. It supports batch processing, real-time streaming, machine learning, and graph processing, and is significantly faster than Hadoop MapReduce.",
+    "category": "data"
+  },
+  {
+    "question": "What is Hadoop?",
+    "answer": "Apache Hadoop is an open-source framework for storing and processing large datasets across clusters of computers. It uses HDFS for distributed storage and MapReduce for distributed processing, making it foundational to big data computing.",
+    "category": "data"
+  },
+  {
+    "question": "What is a primary key in a database?",
+    "answer": "A primary key is a column or set of columns in a database table that uniquely identifies each row. It cannot contain null values and must be unique across all rows, ensuring data integrity and enabling efficient lookups.",
+    "category": "data"
+  },
+  {
+    "question": "What is a foreign key in a database?",
+    "answer": "A foreign key is a column in a database table that references the primary key of another table, establishing a relationship between the two tables. It enforces referential integrity by ensuring referenced records exist.",
+    "category": "data"
+  },
+  {
+    "question": "What is database normalization?",
+    "answer": "Database normalization is the process of organizing a database to reduce data redundancy and improve data integrity. It involves dividing large tables into smaller ones and defining relationships between them following normal form rules.",
+    "category": "data"
+  },
+  {
+    "question": "What is an API gateway?",
+    "answer": "An API gateway is a server that acts as an entry point for clients to access backend services. It handles request routing, authentication, rate limiting, load balancing, and monitoring, simplifying microservices architecture management.",
+    "category": "programming"
+  },
+  {
+    "question": "What is load balancing?",
+    "answer": "Load balancing is the process of distributing incoming network traffic across multiple servers to ensure no single server becomes overwhelmed. It improves application availability, reliability, and scalability.",
+    "category": "devops"
+  },
+  {
+    "question": "What is caching?",
+    "answer": "Caching is the process of storing frequently accessed data in a fast temporary storage layer to reduce retrieval time and server load. It improves application performance and reduces database queries. Common tools include Redis and Memcached.",
+    "category": "programming"
+  },
+  {
+    "question": "What is a content delivery network?",
+    "answer": "A content delivery network (CDN) is a distributed network of servers that delivers web content to users based on their geographic location. It reduces latency by serving content from servers closest to the user, improving website speed.",
+    "category": "cloud"
+  },
+  {
+    "question": "What is OAuth?",
+    "answer": "OAuth is an open standard authorization protocol that allows applications to access user data from another service without exposing passwords. It is widely used for social login features like Sign in with Google or Facebook.",
+    "category": "programming"
+  },
+  {
+    "question": "What is JWT?",
+    "answer": "JSON Web Token (JWT) is a compact and self-contained way of securely transmitting information between parties as a JSON object. It is widely used for authentication and authorization in web applications and APIs.",
+    "category": "programming"
+  },
+  {
+    "question": "What is websocket?",
+    "answer": "WebSocket is a communication protocol that provides full-duplex communication channels over a single TCP connection. Unlike HTTP, it allows servers to push data to clients in real time, making it ideal for chat applications, live feeds, and gaming.",
+    "category": "programming"
+  },
+  {
+    "question": "What is a webhook?",
+    "answer": "A webhook is an HTTP callback that allows one application to notify another when a specific event occurs. Unlike APIs where you poll for data, webhooks push data automatically when triggered, enabling real-time integrations between services.",
+    "category": "programming"
+  },
+  {
+    "question": "What is containerization?",
+    "answer": "Containerization is a lightweight form of virtualization that packages an application and its dependencies into a container. Containers run consistently across different environments and are managed by platforms like Docker and Kubernetes.",
+    "category": "devops"
+  },
+  {
+    "question": "What is infrastructure as code?",
+    "answer": "Infrastructure as code (IaC) is the practice of managing and provisioning computing infrastructure through machine-readable configuration files rather than manual processes. Popular tools include Terraform, Ansible, and AWS CloudFormation.",
+    "category": "devops"
+  },
+  {
+    "question": "What is a monolithic architecture?",
+    "answer": "A monolithic architecture is a software design where all components of an application are built as a single unified unit. While simpler to develop initially, monolithic applications can become difficult to scale and maintain as they grow.",
+    "category": "programming"
+  },
+  {
+    "question": "What is serverless architecture?",
+    "answer": "Serverless architecture is a cloud computing model where developers write functions that are executed on demand without managing servers. The cloud provider automatically scales resources and charges only for actual execution time.",
+    "category": "cloud"
+  },
+  {
+    "question": "What is continuous integration?",
+    "answer": "Continuous integration (CI) is a development practice where developers frequently merge code changes into a shared repository, triggering automated builds and tests. It helps detect integration issues early and maintain code quality.",
+    "category": "devops"
+  },
+  {
+    "question": "What is continuous deployment?",
+    "answer": "Continuous deployment (CD) is a practice where every code change that passes automated tests is automatically deployed to production. It enables teams to release software quickly and reliably without manual intervention.",
+    "category": "devops"
+  },
+  {
+    "question": "What is technical debt?",
+    "answer": "Technical debt refers to the implied cost of additional rework caused by choosing a quick solution now instead of a better approach that would take longer. Accumulating too much technical debt makes software harder to maintain and extend.",
+    "category": "programming"
+  },
+  {
+    "question": "What is pair programming?",
+    "answer": "Pair programming is a software development technique where two programmers work together at one workstation. One writes code while the other reviews each line as it is typed. It improves code quality and knowledge sharing.",
+    "category": "programming"
+  },
+  {
+    "question": "What is test driven development?",
+    "answer": "Test driven development (TDD) is a software development approach where tests are written before the actual code. Developers write a failing test, write code to pass the test, then refactor. It leads to better designed and more reliable code.",
+    "category": "programming"
+  },
+  {
+    "question": "What is code refactoring?",
+    "answer": "Code refactoring is the process of restructuring existing code without changing its external behavior. The goal is to improve code readability, reduce complexity, and make it easier to maintain and extend.",
+    "category": "programming"
+  },
+  {
+    "question": "What is design pattern?",
+    "answer": "A design pattern is a reusable solution to a commonly occurring problem in software design. Patterns like Singleton, Observer, and Factory provide templates for solving specific design challenges and improve code organization.",
+    "category": "programming"
+  },
+  {
+    "question": "What is the MVC pattern?",
+    "answer": "MVC stands for Model-View-Controller, a software design pattern that separates an application into three components. The Model handles data, the View displays information to users, and the Controller manages user input and updates the Model and View.",
+    "category": "programming"
+  },
+  {
+    "question": "What is functional programming?",
+    "answer": "Functional programming is a programming paradigm that treats computation as the evaluation of mathematical functions. It emphasizes immutability, pure functions, and avoiding side effects. Languages like Haskell, Erlang, and Elixir are built around this paradigm.",
+    "category": "programming"
+  },
+  {
+    "question": "What is asynchronous programming?",
+    "answer": "Asynchronous programming is a programming model that allows tasks to run concurrently without waiting for each other to complete. It improves performance in I/O-heavy applications by allowing the program to continue executing while waiting for operations like network requests.",
+    "category": "programming"
+  },
+  {
+    "question": "What is a stack data structure?",
+    "answer": "A stack is a linear data structure that follows the Last In First Out (LIFO) principle, where the last element added is the first to be removed. It is used in function call management, undo operations, and expression evaluation.",
+    "category": "programming"
+  },
+  {
+    "question": "What is a queue data structure?",
+    "answer": "A queue is a linear data structure that follows the First In First Out (FIFO) principle, where the first element added is the first to be removed. It is used in task scheduling, print queues, and breadth-first search algorithms.",
+    "category": "programming"
+  },
+  {
+    "question": "What is a linked list?",
+    "answer": "A linked list is a data structure where elements are stored in nodes, each containing data and a reference to the next node. Unlike arrays, linked lists allow efficient insertion and deletion but have slower random access.",
+    "category": "programming"
+  },
+  {
+    "question": "What is a hash table?",
+    "answer": "A hash table is a data structure that maps keys to values using a hash function for fast lookups. It provides average O(1) time complexity for insertions, deletions, and searches, making it one of the most efficient data structures.",
+    "category": "programming"
+  },
+  {
+    "question": "What is Big O notation?",
+    "answer": "Big O notation is a mathematical notation used to describe the time or space complexity of an algorithm as the input size grows. It helps compare algorithm efficiency, for example O(1) is constant time and O(n) grows linearly with input size.",
+    "category": "programming"
+  },
+  {
+    "question": "What is binary search?",
+    "answer": "Binary search is an efficient algorithm for finding an element in a sorted array by repeatedly dividing the search space in half. It has O(log n) time complexity, making it much faster than linear search for large datasets.",
+    "category": "programming"
+  },
+  {
+    "question": "What is sorting algorithm?",
+    "answer": "A sorting algorithm is a method for arranging elements in a specific order, typically ascending or descending. Common algorithms include bubble sort, merge sort, quick sort, and heap sort, each with different time and space complexity trade-offs.",
+    "category": "programming"
+  },
+  {
+    "question": "What is merge sort?",
+    "answer": "Merge sort is a divide-and-conquer sorting algorithm that splits an array into halves, recursively sorts each half, then merges them back together. It has a guaranteed time complexity of O(n log n) and is stable and efficient for large datasets.",
+    "category": "programming"
+  },
+  {
+    "question": "What is a graph data structure?",
+    "answer": "A graph is a data structure consisting of nodes (vertices) connected by edges. It can be directed or undirected and is used to represent networks, social connections, maps, and dependencies in algorithms like shortest path and topological sort.",
+    "category": "programming"
+  },
+  {
+    "question": "What is dynamic programming?",
+    "answer": "Dynamic programming is an optimization technique that solves complex problems by breaking them into overlapping subproblems and storing their solutions to avoid redundant computation. It is used in algorithms for shortest paths, knapsack problems, and sequence alignment.",
+    "category": "programming"
+  },
+  {
+    "question": "What is encryption?",
+    "answer": "Encryption is the process of converting readable data into an unreadable format using an algorithm and a key, so only authorized parties can access it. It is fundamental to secure communication, data storage, and privacy protection.",
+    "category": "technology"
+  },
+  {
+    "question": "What is SSL TLS?",
+    "answer": "SSL (Secure Sockets Layer) and TLS (Transport Layer Security) are cryptographic protocols that provide secure communication over a network. TLS is the modern successor to SSL and is used to encrypt data between web browsers and servers, indicated by HTTPS.",
+    "category": "programming"
+  },
+  {
+    "question": "What is two factor authentication?",
+    "answer": "Two-factor authentication (2FA) is a security process that requires users to provide two different types of verification before accessing an account. Typically this combines something you know like a password with something you have like a phone code.",
+    "category": "technology"
+  },
+  {
+    "question": "What is a DDoS attack?",
+    "answer": "A Distributed Denial of Service (DDoS) attack is a cyberattack where multiple compromised systems flood a target server with traffic, overwhelming it and making services unavailable to legitimate users. Organizations use firewalls and CDNs to mitigate these attacks.",
+    "category": "technology"
+  },
+  {
+    "question": "What is phishing?",
+    "answer": "Phishing is a cybercrime where attackers disguise themselves as trustworthy entities to trick users into revealing sensitive information like passwords or credit card numbers. It is typically carried out through fraudulent emails or fake websites.",
+    "category": "technology"
+  },
+  {
+    "question": "What is a zero day vulnerability?",
+    "answer": "A zero-day vulnerability is a software security flaw that is unknown to the software vendor and has no available patch. Attackers exploit these vulnerabilities before developers have a chance to fix them, making them highly dangerous.",
+    "category": "technology"
+  },
+  {
+    "question": "What is penetration testing?",
+    "answer": "Penetration testing is an authorized simulated cyberattack on a computer system to evaluate its security. Security professionals use the same tools and techniques as attackers to identify vulnerabilities before malicious hackers can exploit them.",
+    "category": "technology"
+  },
+  {
+    "question": "What is a proxy server?",
+    "answer": "A proxy server is an intermediary server that sits between a client and the internet, forwarding requests on behalf of the client. It is used for privacy, security, content filtering, caching, and bypassing geographic restrictions.",
+    "category": "technology"
+  },
+  {
+    "question": "What is DNS?",
+    "answer": "DNS (Domain Name System) is the internet's system for converting human-readable domain names like google.com into IP addresses that computers use to identify each other. It acts like the internet's phone book.",
+    "category": "programming"
+  },
+  {
+    "question": "What is an IP address?",
+    "answer": "An IP address is a unique numerical label assigned to each device connected to a computer network. IPv4 addresses use four numbers separated by dots while IPv6 uses hexadecimal notation to support more devices.",
+    "category": "technology"
+  },
+  {
+    "question": "What is bandwidth?",
+    "answer": "Bandwidth is the maximum rate at which data can be transmitted over a network connection in a given time period. It is typically measured in bits per second (bps) and affects how quickly data can be downloaded or uploaded.",
+    "category": "technology"
+  },
+  {
+    "question": "What is latency?",
+    "answer": "Latency is the time delay between a request being sent and a response being received in a network. Low latency is crucial for real-time applications like video calls, online gaming, and financial trading systems.",
+    "category": "technology"
+  },
+  {
+    "question": "What is a subnet?",
+    "answer": "A subnet is a logical subdivision of an IP network that improves network performance and security by dividing large networks into smaller manageable segments. Subnetting allows organizations to organize and control network traffic efficiently.",
+    "category": "technology"
+  },
+  {
+    "question": "What is cloud storage?",
+    "answer": "Cloud storage is a model where data is stored on remote servers accessed via the internet rather than on local hardware. Services like Google Drive, Dropbox, and AWS S3 provide scalable, accessible, and secure data storage.",
+    "category": "cloud"
+  },
+  {
+    "question": "What is SaaS?",
+    "answer": "Software as a Service (SaaS) is a cloud computing model where software applications are delivered over the internet on a subscription basis. Examples include Gmail, Salesforce, and Microsoft 365. Users access the software through a browser without installing it locally.",
+    "category": "cloud"
+  },
+  {
+    "question": "What is PaaS?",
+    "answer": "Platform as a Service (PaaS) is a cloud computing model that provides developers with a platform to build, deploy, and manage applications without managing the underlying infrastructure. Examples include Heroku, Google App Engine, and AWS Elastic Beanstalk.",
+    "category": "cloud"
+  },
+  {
+    "question": "What is IaaS?",
+    "answer": "Infrastructure as a Service (IaaS) is a cloud computing model that provides virtualized computing resources like servers, storage, and networking over the internet. Examples include AWS EC2, Google Compute Engine, and Microsoft Azure VMs.",
+    "category": "cloud"
+  },
+  {
+    "question": "What is AWS?",
+    "answer": "Amazon Web Services (AWS) is the world's most widely adopted cloud platform, offering over 200 services including computing, storage, databases, networking, and AI. It is used by millions of businesses from startups to enterprises worldwide.",
+    "category": "cloud"
+  },
+  {
+    "question": "What is Google Cloud?",
+    "answer": "Google Cloud Platform (GCP) is a suite of cloud computing services offered by Google. It provides infrastructure, data analytics, machine learning, and developer tools, competing with AWS and Microsoft Azure in the cloud market.",
+    "category": "cloud"
+  },
+  {
+    "question": "What is Microsoft Azure?",
+    "answer": "Microsoft Azure is a cloud computing platform offering a wide range of services including computing, analytics, storage, and networking. It is particularly popular among enterprises already using Microsoft products like Windows Server and Office 365.",
+    "category": "cloud"
+  },
+  {
+    "question": "What is version control?",
+    "answer": "Version control is a system that records changes to files over time so you can recall specific versions later. It allows multiple developers to collaborate on code, track changes, revert mistakes, and manage different versions of a project.",
+    "category": "devops"
+  },
+  {
+    "question": "What is a pull request?",
+    "answer": "A pull request is a feature in version control platforms like GitHub where a developer requests that their code changes be reviewed and merged into the main codebase. It facilitates code review, discussion, and collaboration before changes are integrated.",
+    "category": "devops"
+  },
+  {
+    "question": "What is a software development lifecycle?",
+    "answer": "The software development lifecycle (SDLC) is a structured process for planning, creating, testing, and deploying software. Common phases include requirements analysis, design, implementation, testing, deployment, and maintenance.",
+    "category": "programming"
+  },
+  {
+    "question": "What is user experience design?",
+    "answer": "User experience (UX) design is the process of creating products that provide meaningful and relevant experiences to users. It involves the design of the entire process of acquiring and integrating the product, including aspects of branding, design, usability, and function.",
+    "category": "programming"
+  },
+  {
+    "question": "What is user interface design?",
+    "answer": "User interface (UI) design is the process of designing the visual elements of a software application that users interact with. It focuses on the look, feel, and interactivity of a product, including buttons, icons, spacing, typography, and color schemes.",
+    "category": "programming"
+  },
+  {
+    "question": "What is responsive web design?",
+    "answer": "Responsive web design is an approach to web development where websites adapt their layout and content to fit different screen sizes and devices. It uses flexible grids, images, and CSS media queries to ensure a good user experience on desktops, tablets, and phones.",
+    "category": "programming"
+  },
+  {
+    "question": "What is accessibility in web development?",
+    "answer": "Web accessibility means designing and developing websites so that people with disabilities can use them. This includes providing text alternatives for images, keyboard navigation, sufficient color contrast, and screen reader compatibility.",
+    "category": "programming"
+  },
+  {
+    "question": "What is progressive web app?",
+    "answer": "A progressive web app (PWA) is a web application that uses modern web technologies to deliver app-like experiences in browsers. PWAs can work offline, send push notifications, and be installed on devices, combining the best of web and mobile apps.",
+    "category": "programming"
+  },
+  {
+    "question": "What is Node.js?",
+    "answer": "Node.js is a JavaScript runtime environment that executes JavaScript code outside a web browser. It allows developers to use JavaScript for server-side programming and is known for its non-blocking event-driven architecture, making it efficient for real-time applications.",
+    "category": "programming"
+  },
+  {
+    "question": "What is Vue.js?",
+    "answer": "Vue.js is a progressive JavaScript framework for building user interfaces. It is designed to be incrementally adoptable, meaning you can use as much or as little of it as needed. Vue is known for its gentle learning curve and excellent documentation.",
+    "category": "programming"
+  },
+  {
+    "question": "What is Angular?",
+    "answer": "Angular is a TypeScript-based open-source web application framework developed by Google. It provides a comprehensive solution for building large-scale enterprise applications with features like dependency injection, two-way data binding, and a powerful CLI.",
+    "category": "programming"
+  },
+  {
+    "question": "What is Django?",
+    "answer": "Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. It follows the batteries-included philosophy, providing built-in features for authentication, database ORM, admin interface, and security.",
+    "category": "programming"
+  },
+  {
+    "question": "What is Ruby on Rails?",
+    "answer": "Ruby on Rails is a server-side web application framework written in Ruby. It follows the conventions over configuration principle, allowing developers to build web applications quickly. It popularized many modern web development practices.",
+    "category": "programming"
+  },
+  {
+    "question": "What is Spring Boot?",
+    "answer": "Spring Boot is a Java-based framework used to create standalone, production-grade Spring applications with minimal configuration. It simplifies the development of enterprise Java applications by providing auto-configuration and embedded servers.",
+    "category": "programming"
+  },
+  {
+    "question": "What is PostgreSQL?",
+    "answer": "PostgreSQL is a powerful open-source relational database system known for its reliability, feature richness, and standards compliance. It supports advanced data types, full-text search, JSON storage, and complex queries, making it popular for production applications.",
+    "category": "data"
+  },
+  {
+    "question": "What is MySQL?",
+    "answer": "MySQL is the world's most popular open-source relational database management system. It is widely used for web applications and is a core component of the LAMP stack. It offers good performance, reliability, and ease of use.",
+    "category": "data"
+  },
+  {
+    "question": "What is database indexing?",
+    "answer": "Database indexing is the process of creating data structures that allow faster retrieval of records from a database. Indexes work like a book's table of contents, allowing the database to find data without scanning every row in a table.",
+    "category": "data"
+  },
+  {
+    "question": "What is a stored procedure?",
+    "answer": "A stored procedure is a precompiled set of SQL statements stored in a database that can be executed as a single unit. They improve performance by reducing network traffic and can implement complex business logic directly in the database.",
+    "category": "data"
+  },
+  {
+    "question": "What is ACID in databases?",
+    "answer": "ACID stands for Atomicity, Consistency, Isolation, and Durability, the four properties that guarantee reliable database transactions. Atomicity ensures all operations succeed or fail together, while the others ensure data integrity and reliability.",
+    "category": "data"
+  },
+  {
+    "question": "What is the CAP theorem?",
+    "answer": "The CAP theorem states that a distributed data system can only guarantee two of three properties simultaneously: Consistency, Availability, and Partition tolerance. It is fundamental to understanding trade-offs in distributed database design.",
+    "category": "data"
+  },
+  {
+    "question": "What is a message queue?",
+    "answer": "A message queue is a form of asynchronous communication between services where messages are stored in a queue until the receiving service is ready to process them. Tools like RabbitMQ and Apache Kafka enable reliable communication between distributed systems.",
+    "category": "devops"
+  },
+  {
+    "question": "What is Apache Kafka?",
+    "answer": "Apache Kafka is a distributed event streaming platform used for high-performance data pipelines, streaming analytics, and real-time data integration. It can handle millions of events per second and is widely used in large-scale data architectures.",
+    "category": "data"
+  },
+  {
+    "question": "What is Elasticsearch?",
+    "answer": "Elasticsearch is a distributed search and analytics engine built on Apache Lucene. It enables fast full-text search, log analysis, and real-time analytics on large volumes of data. It is widely used for application search and log monitoring.",
+    "category": "data"
+  },
+  {
+    "question": "What is Nginx?",
+    "answer": "Nginx is a high-performance web server and reverse proxy that is also used as a load balancer and HTTP cache. It is known for its stability, rich feature set, and low resource consumption, making it one of the most widely used web servers.",
+    "category": "devops"
   }
 ]
