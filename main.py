@@ -275,12 +275,7 @@ async def ask(payload: AskRequest):
     if wiki_result:
         return AskResponse(**wiki_result)
 
-    # Step 3 — DuckDuckGo backup
-    ddg_result = await ask_duckduckgo(payload.question)
-    if ddg_result:
-        return AskResponse(**ddg_result)
-
-    # Step 4 — Nothing found
+    # Step 3 — Nothing found
     raise HTTPException(
         status_code=404,
         detail="No answer found. Try rephrasing your question.",
