@@ -1493,5 +1493,540 @@
     "question": "What is Nginx?",
     "answer": "Nginx is a high-performance web server and reverse proxy that is also used as a load balancer and HTTP cache. It is known for its stability, rich feature set, and low resource consumption, making it one of the most widely used web servers.",
     "category": "devops"
-  }
+  },
+  {
+    "question": "How many ounces in a cup?",
+    "answer": "There are 8 fluid ounces in one cup. This is a standard US measurement used in cooking and baking. Two cups equal one pint, four cups equal one quart, and sixteen cups equal one gallon.",
+    "category": "general"
+  },
+  {
+    "question": "How many cups in a gallon?",
+    "answer": "There are 16 cups in one gallon. A gallon contains 4 quarts, each quart contains 2 pints, each pint contains 2 cups, making a total of 16 cups per gallon.",
+    "category": "general"
+  },
+  {
+    "question": "How many tablespoons in a cup?",
+    "answer": "There are 16 tablespoons in one cup. One cup also equals 48 teaspoons or 8 fluid ounces. These conversions are essential for accurate cooking and baking measurements.",
+    "category": "general"
+  },
+  {
+    "question": "How many teaspoons in a tablespoon?",
+    "answer": "There are 3 teaspoons in one tablespoon. This is a standard cooking measurement used worldwide. One tablespoon equals approximately 15 millilitres in the metric system.",
+    "category": "general"
+  },
+  {
+    "question": "How many grams in an ounce?",
+    "answer": "There are approximately 28.35 grams in one ounce. This conversion is commonly used when switching between the imperial and metric measurement systems in cooking, science, and trade.",
+    "category": "general"
+  },
+  {
+    "question": "How many kilograms in a pound?",
+    "answer": "One pound is equal to approximately 0.453 kilograms. Conversely, one kilogram equals approximately 2.205 pounds. This conversion is frequently used in health, fitness, and international trade.",
+    "category": "general"
+  },
+  {
+    "question": "How many miles in a kilometer?",
+    "answer": "One kilometer is equal to approximately 0.621 miles. Conversely, one mile equals approximately 1.609 kilometers. This conversion is useful for travel, running, and navigation.",
+    "category": "general"
+  },
+  {
+    "question": "How many feet in a meter?",
+    "answer": "One meter is equal to approximately 3.281 feet. Conversely, one foot equals approximately 0.305 meters. This conversion is used in construction, sports, and international measurements.",
+    "category": "general"
+  },
+  {
+    "question": "How many inches in a foot?",
+    "answer": "There are 12 inches in one foot. One foot equals approximately 30.48 centimeters. This is a fundamental measurement in the imperial system used in the US and UK.",
+    "category": "general"
+  },
+  {
+    "question": "How many centimeters in an inch?",
+    "answer": "There are approximately 2.54 centimeters in one inch. This is an exact conversion used widely in science, engineering, clothing sizes, and screen measurements.",
+    "category": "general"
+  },
+  {
+    "question": "How many steps in a mile?",
+    "answer": "There are approximately 2,000 steps in one mile for an average person. However, this varies depending on height and stride length. A common fitness goal is 10,000 steps per day, which equals roughly 5 miles.",
+    "category": "health"
+  },
+  {
+    "question": "How many calories should I eat a day?",
+    "answer": "The average adult needs about 2,000 to 2,500 calories per day, depending on age, sex, height, weight, and activity level. Women generally need around 2,000 calories and men around 2,500 calories daily.",
+    "category": "health"
+  },
+  {
+    "question": "How many calories are in an egg?",
+    "answer": "A large boiled or poached egg contains approximately 78 calories. A fried egg contains around 90 calories depending on the cooking oil used. Eggs are also rich in protein, vitamins, and healthy fats.",
+    "category": "health"
+  },
+  {
+    "question": "How many calories are in a banana?",
+    "answer": "A medium banana contains approximately 105 calories. Bananas are also a good source of potassium, vitamin B6, vitamin C, and dietary fiber, making them a popular and nutritious snack.",
+    "category": "health"
+  },
+  {
+    "question": "How much water should I drink a day?",
+    "answer": "The general recommendation is to drink about 8 glasses or 2 liters of water per day, often called the 8x8 rule. However, individual needs vary based on body size, activity level, climate, and health status.",
+    "category": "health"
+  },
+  {
+    "question": "How to lose weight fast?",
+    "answer": "Healthy weight loss involves creating a calorie deficit through a balanced diet and regular exercise. Experts recommend losing 0.5 to 1 kilogram per week through reduced calorie intake, increased physical activity, adequate sleep, and staying hydrated.",
+    "category": "health"
+  },
+  {
+    "question": "How to lower blood pressure?",
+    "answer": "Blood pressure can be lowered by reducing salt intake, exercising regularly, maintaining a healthy weight, limiting alcohol, quitting smoking, managing stress, eating a diet rich in fruits and vegetables, and taking prescribed medication if recommended by a doctor.",
+    "category": "health"
+  },
+  {
+    "question": "How to lower cholesterol?",
+    "answer": "Cholesterol can be lowered by eating a heart-healthy diet low in saturated and trans fats, exercising regularly, maintaining a healthy weight, quitting smoking, and limiting alcohol. In some cases, doctors may prescribe cholesterol-lowering medications called statins.",
+    "category": "health"
+  },
+  {
+    "question": "What is normal blood pressure?",
+    "answer": "Normal blood pressure is below 120/80 mmHg. The top number (systolic) measures pressure when the heart beats, and the bottom number (diastolic) measures pressure between beats. High blood pressure (hypertension) is diagnosed at 130/80 mmHg or higher.",
+    "category": "health"
+  },
+  {
+    "question": "What is a normal heart rate?",
+    "answer": "A normal resting heart rate for adults is between 60 and 100 beats per minute. Athletes often have lower resting heart rates of 40 to 60 beats per minute due to their cardiovascular fitness. Heart rate varies with age, fitness, and health conditions.",
+    "category": "health"
+  },
+  {
+    "question": "What are symptoms of diabetes?",
+    "answer": "Common symptoms of diabetes include frequent urination, excessive thirst, unexplained weight loss, blurred vision, slow healing wounds, fatigue, and tingling in hands or feet. If you experience these symptoms, consult a healthcare professional for proper diagnosis.",
+    "category": "health"
+  },
+  {
+    "question": "What are symptoms of high blood pressure?",
+    "answer": "High blood pressure is often called the silent killer because it typically has no symptoms. When symptoms do occur they may include headaches, shortness of breath, nosebleeds, dizziness, and chest pain. Regular monitoring is the only way to detect it.",
+    "category": "health"
+  },
+  {
+    "question": "What are symptoms of depression?",
+    "answer": "Symptoms of depression include persistent sadness or emptiness, loss of interest in activities, changes in appetite or weight, sleep disturbances, fatigue, difficulty concentrating, feelings of worthlessness, and in severe cases thoughts of self-harm. Professional help should be sought.",
+    "category": "health"
+  },
+  {
+    "question": "What causes high blood pressure?",
+    "answer": "High blood pressure is caused by factors including unhealthy diet high in salt and fat, lack of physical activity, obesity, smoking, excessive alcohol consumption, chronic stress, family history, age, and underlying conditions like kidney disease or hormonal disorders.",
+    "category": "health"
+  },
+  {
+    "question": "What causes anxiety?",
+    "answer": "Anxiety can be caused by stress, trauma, medical conditions, genetics, brain chemistry, substance use, and major life changes. It can also be triggered by caffeine, lack of sleep, or certain medications. Anxiety disorders are the most common mental health conditions globally.",
+    "category": "health"
+  },
+  {
+    "question": "How to sleep better?",
+    "answer": "Better sleep can be achieved by maintaining a consistent sleep schedule, creating a dark and cool bedroom environment, avoiding screens before bed, limiting caffeine and alcohol, exercising regularly but not close to bedtime, and practicing relaxation techniques.",
+    "category": "health"
+  },
+  {
+    "question": "How to boost immunity?",
+    "answer": "Immunity can be boosted by eating a balanced diet rich in fruits, vegetables, and whole grains, exercising regularly, getting adequate sleep, managing stress, staying hydrated, avoiding smoking, limiting alcohol, and keeping up with vaccinations.",
+    "category": "health"
+  },
+  {
+    "question": "How to get rid of a cold fast?",
+    "answer": "While there is no cure for the common cold, recovery can be aided by resting, staying hydrated, eating warm foods like soup, taking over-the-counter cold medications, gargling salt water, and using a humidifier. Most colds resolve within 7 to 10 days.",
+    "category": "health"
+  },
+  {
+    "question": "How to stop a headache?",
+    "answer": "Headaches can be relieved by drinking water, resting in a quiet dark room, applying a cold or warm compress, taking over-the-counter pain relievers, managing stress, and avoiding triggers like bright lights or strong smells. Chronic headaches should be evaluated by a doctor.",
+    "category": "health"
+  },
+  {
+    "question": "How to treat a fever?",
+    "answer": "A fever can be treated by resting, drinking plenty of fluids, taking fever-reducing medications like paracetamol or ibuprofen, wearing light clothing, and using a lukewarm compress. Seek medical attention if fever exceeds 39.4 degrees Celsius or lasts more than 3 days.",
+    "category": "health"
+  },
+  {
+    "question": "How to make money online?",
+    "answer": "Ways to make money online include freelancing in writing, design, or coding, selling products on e-commerce platforms, affiliate marketing, creating YouTube content, online tutoring, dropshipping, taking online surveys, and investing in stocks or cryptocurrency.",
+    "category": "general"
+  },
+  {
+    "question": "How to save money?",
+    "answer": "Money can be saved by creating and following a budget, cutting unnecessary expenses, cooking at home instead of eating out, cancelling unused subscriptions, building an emergency fund, automating savings, comparing prices before buying, and avoiding impulse purchases.",
+    "category": "general"
+  },
+  {
+    "question": "How to invest money?",
+    "answer": "Money can be invested through stocks, bonds, mutual funds, real estate, index funds, and retirement accounts. Start by building an emergency fund, paying off high-interest debt, then diversify investments according to your risk tolerance and financial goals.",
+    "category": "general"
+  },
+  {
+    "question": "What is compound interest?",
+    "answer": "Compound interest is interest calculated on both the initial principal and the accumulated interest from previous periods. It is often called the eighth wonder of the world because it allows investments to grow exponentially over time.",
+    "category": "general"
+  },
+  {
+    "question": "What is a credit score?",
+    "answer": "A credit score is a numerical rating between 300 and 850 that represents a person's creditworthiness based on their credit history, payment behaviour, debts, and financial activity. A higher score indicates better credit health and qualifies you for better loan rates.",
+    "category": "general"
+  },
+  {
+    "question": "How to improve credit score?",
+    "answer": "Credit score can be improved by paying bills on time, keeping credit card balances low, not opening too many new accounts at once, maintaining a mix of credit types, checking your credit report for errors, and keeping old accounts open to maintain credit history.",
+    "category": "general"
+  },
+  {
+    "question": "What is inflation?",
+    "answer": "Inflation is the rate at which the general level of prices for goods and services rises over time, reducing the purchasing power of money. It is measured as a percentage and is monitored by central banks who use interest rates to control it.",
+    "category": "general"
+  },
+  {
+    "question": "How to write a CV?",
+    "answer": "A good CV includes your contact information, a professional summary, work experience listed in reverse chronological order, education, skills, and relevant achievements. Keep it to one or two pages, use clear formatting, tailor it to each job, and proofread carefully.",
+    "category": "general"
+  },
+  {
+    "question": "How to write a cover letter?",
+    "answer": "A cover letter should be three to four paragraphs, addressed to the hiring manager, explaining why you want the job, how your skills match the requirements, and what value you bring. Keep it concise, professional, and personalised to each application.",
+    "category": "general"
+  },
+  {
+    "question": "How to start a business?",
+    "answer": "Starting a business involves choosing a viable business idea, researching the market, writing a business plan, registering the business, securing funding, setting up finances, building your product or service, and marketing to customers. Starting small and validating your idea first is recommended.",
+    "category": "general"
+  },
+  {
+    "question": "What is ChatGPT?",
+    "answer": "ChatGPT is an AI-powered conversational chatbot developed by OpenAI. It uses large language model technology to understand and generate human-like text responses. It can answer questions, write content, generate code, summarise documents, and assist with many tasks.",
+    "category": "technology"
+  },
+  {
+    "question": "What is artificial intelligence?",
+    "answer": "Artificial intelligence (AI) is the simulation of human intelligence processes by computer systems. It includes learning, reasoning, problem solving, and language understanding. AI powers applications like virtual assistants, recommendation systems, image recognition, and self-driving cars.",
+    "category": "ai_ml"
+  },
+  {
+    "question": "What is cryptocurrency?",
+    "answer": "Cryptocurrency is a digital or virtual currency that uses cryptography for security and operates on decentralised blockchain networks. Bitcoin and Ethereum are the most well-known examples. It allows peer-to-peer transactions without a central authority like a bank.",
+    "category": "technology"
+  },
+  {
+    "question": "What is Bitcoin?",
+    "answer": "Bitcoin is the world's first and most widely used cryptocurrency, created in 2009 by an anonymous person or group using the name Satoshi Nakamoto. It operates on a decentralised blockchain network and has a limited supply of 21 million coins.",
+    "category": "technology"
+  },
+  {
+    "question": "What is the stock market?",
+    "answer": "The stock market is a marketplace where investors buy and sell shares of publicly listed companies. It allows companies to raise capital by selling ownership stakes and gives investors the opportunity to profit from a company's growth.",
+    "category": "general"
+  },
+  {
+    "question": "How to cook rice?",
+    "answer": "To cook rice, rinse it under cold water, then combine one cup of rice with two cups of water in a pot. Bring to a boil, reduce heat to low, cover, and simmer for 18 minutes. Remove from heat and let it steam for 5 minutes before fluffing with a fork.",
+    "category": "general"
+  },
+  {
+    "question": "How to boil an egg?",
+    "answer": "To boil an egg, place it in a pot of cold water and bring to a boil. For soft-boiled eggs cook for 6 minutes, for medium cook for 8 minutes, and for hard-boiled cook for 10 to 12 minutes. Transfer to cold water immediately to stop cooking.",
+    "category": "general"
+  },
+  {
+    "question": "How to make pancakes?",
+    "answer": "Mix 1 cup flour, 2 tablespoons sugar, 1 teaspoon baking powder, a pinch of salt, 1 cup milk, 1 egg, and 2 tablespoons melted butter. Heat a pan over medium heat, pour batter, cook until bubbles form (about 2 minutes), then flip and cook 1 more minute.",
+    "category": "general"
+  },
+  {
+    "question": "How to make pasta?",
+    "answer": "Boil a large pot of salted water, add pasta, and cook according to package directions until al dente. For a basic tomato sauce, saute garlic in olive oil, add crushed tomatoes, season with salt, pepper, and basil, simmer for 20 minutes, and toss with pasta.",
+    "category": "general"
+  },
+  {
+    "question": "How to make scrambled eggs?",
+    "answer": "Whisk 2 to 3 eggs with a splash of milk, salt, and pepper. Heat butter in a pan over low heat, pour in eggs, and gently push them around with a spatula as they cook. Remove from heat just before fully set as they continue cooking from residual heat.",
+    "category": "general"
+  },
+  {
+    "question": "How to tie a tie?",
+    "answer": "For a simple knot, drape the tie with the wide end on your right. Cross the wide end over the narrow end, wrap it around and behind, then bring it up through the neck loop, tuck it through the front knot, and tighten by pulling down on the wide end.",
+    "category": "general"
+  },
+  {
+    "question": "How to lose belly fat?",
+    "answer": "Belly fat is reduced through a combination of calorie deficit eating, cardiovascular exercise like walking or running, strength training, reducing stress, getting adequate sleep, limiting sugar and alcohol, and staying hydrated. Spot reduction is not possible so overall fat loss is needed.",
+    "category": "health"
+  },
+  {
+    "question": "How to build muscle?",
+    "answer": "Muscle is built through progressive resistance training, adequate protein intake of 1.6 to 2.2 grams per kilogram of body weight daily, sufficient rest between workouts, consistent sleep, and a slight calorie surplus. Compound exercises like squats and deadlifts are most effective.",
+    "category": "health"
+  },
+  {
+    "question": "How to meditate?",
+    "answer": "To meditate, find a quiet place and sit comfortably with your back straight. Close your eyes, focus on your breathing, and notice the sensation of each breath. When your mind wanders, gently bring your attention back to your breath. Start with 5 to 10 minutes daily.",
+    "category": "general"
+  },
+  {
+    "question": "How to stop smoking?",
+    "answer": "Quitting smoking involves setting a quit date, using nicotine replacement therapies like patches or gum, seeking prescription medications from a doctor, avoiding smoking triggers, getting support from friends and family, and joining a cessation programme. Most people need multiple attempts.",
+    "category": "health"
+  },
+  {
+    "question": "How to reduce stress?",
+    "answer": "Stress can be reduced through regular exercise, meditation, deep breathing exercises, adequate sleep, spending time in nature, socialising with loved ones, practising gratitude, setting boundaries, limiting social media, and seeking professional help if stress becomes overwhelming.",
+    "category": "health"
+  },
+  {
+    "question": "How to improve memory?",
+    "answer": "Memory can be improved by getting regular sleep, exercising regularly, eating a brain-healthy diet rich in omega-3 fatty acids, staying mentally active through reading and puzzles, managing stress, staying hydrated, and using memory techniques like spaced repetition and mnemonics.",
+    "category": "health"
+  },
+  {
+    "question": "How to learn a new language?",
+    "answer": "The most effective ways to learn a new language include daily practice using apps like Duolingo or Babbel, watching films and listening to music in that language, speaking with native speakers, taking classes, immersing yourself in the culture, and practising consistently for at least 30 minutes daily.",
+    "category": "general"
+  },
+  {
+    "question": "How to study effectively?",
+    "answer": "Effective studying involves using active recall and spaced repetition, breaking study sessions into 25 to 30 minute intervals with short breaks (Pomodoro technique), eliminating distractions, teaching concepts to others, practising past questions, and getting adequate sleep to consolidate memory.",
+    "category": "general"
+  },
+  {
+    "question": "How to focus better?",
+    "answer": "Focus can be improved by eliminating distractions, using the Pomodoro technique, getting adequate sleep, exercising regularly, meditating, breaking tasks into smaller steps, setting clear goals, eating brain-healthy foods, staying hydrated, and reducing social media use.",
+    "category": "general"
+  },
+  {
+    "question": "How to be more productive?",
+    "answer": "Productivity improves by planning your day the night before, tackling the hardest task first, using time-blocking techniques, limiting distractions, taking regular breaks, delegating tasks, using productivity apps, maintaining work-life balance, and reviewing your progress regularly.",
+    "category": "general"
+  },
+  {
+    "question": "How to build confidence?",
+    "answer": "Confidence is built by setting and achieving small goals, improving your posture and body language, preparing and practising skills, surrounding yourself with supportive people, challenging negative self-talk, stepping out of your comfort zone regularly, and celebrating your achievements.",
+    "category": "general"
+  },
+  {
+    "question": "How to make friends?",
+    "answer": "Friends are made by putting yourself in social situations, joining clubs or classes based on your interests, being genuinely interested in others, listening actively, being reliable and consistent, initiating plans, and maintaining contact over time. Quality matters more than quantity.",
+    "category": "general"
+  },
+  {
+    "question": "How to deal with anxiety?",
+    "answer": "Anxiety can be managed through deep breathing exercises, mindfulness meditation, regular physical exercise, reducing caffeine intake, maintaining a regular sleep schedule, challenging anxious thoughts, staying connected with supportive people, and seeking professional therapy when needed.",
+    "category": "health"
+  },
+  {
+    "question": "How to get rid of acne?",
+    "answer": "Acne can be treated by washing your face twice daily with a gentle cleanser, avoiding touching your face, using non-comedogenic skincare products, applying treatments containing salicylic acid or benzoyl peroxide, staying hydrated, eating a balanced diet, and consulting a dermatologist for severe cases.",
+    "category": "health"
+  },
+  {
+    "question": "How to grow hair faster?",
+    "answer": "Hair growth can be supported by eating a diet rich in protein, biotin, iron, and vitamins, massaging the scalp to improve circulation, avoiding heat styling and harsh chemicals, trimming split ends regularly, staying hydrated, managing stress, and getting adequate sleep.",
+    "category": "health"
+  },
+  {
+    "question": "How many calories in a slice of bread?",
+    "answer": "A typical slice of white bread contains approximately 80 to 90 calories, while a slice of wholemeal bread contains about 70 to 80 calories. The exact calorie count depends on the size and type of bread.",
+    "category": "health"
+  },
+  {
+    "question": "How many calories in rice?",
+    "answer": "One cup of cooked white rice contains approximately 200 calories, while one cup of cooked brown rice contains about 215 calories. Brown rice is considered healthier as it is higher in fibre and nutrients.",
+    "category": "health"
+  },
+  {
+    "question": "How many calories in chicken breast?",
+    "answer": "A 100 gram serving of cooked chicken breast contains approximately 165 calories, 31 grams of protein, and 3.6 grams of fat. Chicken breast is one of the most popular high-protein, low-fat foods for fitness and weight management.",
+    "category": "health"
+  },
+  {
+    "question": "How many calories in an apple?",
+    "answer": "A medium apple contains approximately 95 calories. Apples are also a good source of dietary fibre, vitamin C, and antioxidants. They are a healthy, low-calorie snack that helps with digestion and satiety.",
+    "category": "health"
+  },
+  {
+    "question": "What is hypertension?",
+    "answer": "Hypertension is the medical term for high blood pressure, defined as a reading of 130/80 mmHg or higher. It is a major risk factor for heart disease, stroke, and kidney failure. It is managed through lifestyle changes and medication.",
+    "category": "health"
+  },
+  {
+    "question": "What is a stroke?",
+    "answer": "A stroke occurs when blood supply to part of the brain is cut off, causing brain cells to die. Symptoms include sudden face drooping, arm weakness, and speech difficulty. The FAST acronym stands for Face, Arms, Speech, Time and is used to recognise strokes.",
+    "category": "health"
+  },
+  {
+    "question": "What is a heart attack?",
+    "answer": "A heart attack occurs when blood flow to part of the heart muscle is blocked, usually by a blood clot. Symptoms include chest pain or pressure, shortness of breath, pain in the arm, neck, or jaw, and nausea. It is a medical emergency requiring immediate attention.",
+    "category": "health"
+  },
+  {
+    "question": "What is the immune system?",
+    "answer": "The immune system is the body's defense mechanism against disease, infection, and foreign substances. It consists of a network of cells, tissues, and organs including white blood cells, antibodies, the lymphatic system, and the spleen.",
+    "category": "science"
+  },
+  {
+    "question": "What is a calorie?",
+    "answer": "A calorie is a unit of energy measurement used to express the nutritional energy value of food. The body uses calories for all functions from breathing to exercise. The number of calories consumed versus burned determines whether you gain, lose, or maintain weight.",
+    "category": "health"
+  },
+  {
+    "question": "What is protein?",
+    "answer": "Protein is one of the three main macronutrients essential for the human body. It is made up of amino acids and is responsible for building and repairing muscles, producing enzymes and hormones, and supporting immune function. Good sources include meat, eggs, legumes, and dairy.",
+    "category": "health"
+  },
+  {
+    "question": "What is fiber in food?",
+    "answer": "Dietary fiber is a type of carbohydrate that the body cannot digest. It promotes digestive health, helps maintain healthy blood sugar and cholesterol levels, aids in weight management, and reduces the risk of colorectal cancer. Found in fruits, vegetables, whole grains, and legumes.",
+    "category": "health"
+  },
+  {
+    "question": "What is a balanced diet?",
+    "answer": "A balanced diet includes the right proportions of carbohydrates, proteins, fats, vitamins, minerals, and water. It emphasises fruits, vegetables, whole grains, lean proteins, and healthy fats while limiting processed foods, added sugars, and excessive salt.",
+    "category": "health"
+  },
+  {
+    "question": "What is BMI?",
+    "answer": "BMI (Body Mass Index) is a measure of body weight relative to height, calculated by dividing weight in kilograms by height in metres squared. A BMI below 18.5 is underweight, 18.5 to 24.9 is normal, 25 to 29.9 is overweight, and above 30 is obese.",
+    "category": "health"
+  },
+  {
+    "question": "What is the difference between a cold and flu?",
+    "answer": "A cold is a mild respiratory infection with gradual onset of runny nose, sneezing, and mild fatigue. Flu (influenza) has a sudden onset with high fever, severe body aches, extreme fatigue, and headache. Flu symptoms are more severe and can lead to serious complications.",
+    "category": "health"
+  },
+  {
+    "question": "What is insomnia?",
+    "answer": "Insomnia is a sleep disorder characterised by difficulty falling asleep, staying asleep, or waking too early and being unable to return to sleep. It can be caused by stress, anxiety, poor sleep habits, medications, or underlying medical conditions.",
+    "category": "health"
+  },
+  {
+    "question": "What is metabolism?",
+    "answer": "Metabolism refers to all the chemical processes that occur in the body to maintain life, including converting food into energy. Metabolic rate varies between individuals based on age, sex, muscle mass, genetics, and activity level.",
+    "category": "science"
+  },
+  {
+    "question": "What is the difference between weather and climate?",
+    "answer": "Weather refers to short-term atmospheric conditions in a specific area, like today's rain or temperature. Climate is the average pattern of weather over a long period of 30 years or more in a region. Climate change refers to long-term shifts in these average patterns.",
+    "category": "science"
+  },
+  {
+    "question": "How does the brain work?",
+    "answer": "The brain works by processing information through billions of neurons that communicate via electrical and chemical signals called synapses. Different regions control specific functions such as the frontal lobe for decision making, the hippocampus for memory, and the cerebellum for movement.",
+    "category": "science"
+  },
+  {
+    "question": "How does the heart work?",
+    "answer": "The heart is a muscular pump that circulates blood throughout the body. It has four chambers: two atria that receive blood and two ventricles that pump it out. The right side pumps blood to the lungs for oxygen, while the left side pumps oxygenated blood to the body.",
+    "category": "science"
+  },
+  {
+    "question": "How does digestion work?",
+    "answer": "Digestion begins in the mouth where food is chewed and mixed with saliva. It passes down the esophagus to the stomach where it is broken down by acids, then moves to the small intestine where nutrients are absorbed into the bloodstream. Waste passes through the large intestine.",
+    "category": "science"
+  },
+  {
+    "question": "What is the biggest planet in the solar system?",
+    "answer": "Jupiter is the largest planet in our solar system. It is a gas giant with a mass more than twice that of all other planets combined. Jupiter is famous for its Great Red Spot, a giant storm that has been raging for hundreds of years.",
+    "category": "science"
+  },
+  {
+    "question": "What is the smallest planet in the solar system?",
+    "answer": "Mercury is the smallest planet in our solar system and the closest to the Sun. Despite being closest to the Sun, it is not the hottest planet. It has a very thin atmosphere and extreme temperature variations between day and night.",
+    "category": "science"
+  },
+  {
+    "question": "Why is the sky blue?",
+    "answer": "The sky appears blue because of a process called Rayleigh scattering. When sunlight enters the atmosphere, it collides with gas molecules and scatters. Blue light has a shorter wavelength and scatters more than other colours, making the sky look blue during the day.",
+    "category": "science"
+  },
+  {
+    "question": "Why is the ocean salty?",
+    "answer": "The ocean is salty because rivers carry dissolved minerals and salts from land into the sea. Over billions of years these minerals have accumulated. Hydrothermal vents on the ocean floor also release minerals. The most common salt is sodium chloride, the same as table salt.",
+    "category": "science"
+  },
+  {
+    "question": "Why do we dream?",
+    "answer": "Dreams occur during REM (Rapid Eye Movement) sleep and are thought to help process emotions, consolidate memories, and problem-solve. Scientists believe dreaming helps the brain organise and store information from the day, though the exact purpose of dreams remains debated.",
+    "category": "science"
+  },
+  {
+    "question": "Why do we yawn?",
+    "answer": "Yawning is believed to help cool the brain, increase alertness, and regulate brain temperature. It also helps stretch the eardrums and increase oxygen intake. Contagious yawning, triggered by seeing others yawn, is associated with empathy and social bonding.",
+    "category": "science"
+  },
+  {
+    "question": "Why do leaves change color in autumn?",
+    "answer": "Leaves change colour in autumn because trees stop producing chlorophyll, the green pigment used for photosynthesis. As chlorophyll breaks down, other pigments like yellow xanthophylls and orange carotenoids are revealed. Red anthocyanins are produced from sugars trapped in the leaves.",
+    "category": "science"
+  },
+  {
+    "question": "What is the theory of relativity?",
+    "answer": "Einstein's theory of relativity consists of two parts. Special relativity (1905) states that the laws of physics are the same for all observers and that the speed of light is constant. General relativity (1915) describes gravity as the curvature of spacetime caused by mass.",
+    "category": "science"
+  },
+  {
+    "question": "What is the Big Bang theory?",
+    "answer": "The Big Bang theory is the leading scientific explanation for the origin of the universe. It proposes that approximately 13.8 billion years ago, the universe began as an extremely hot and dense point and has been expanding and cooling ever since.",
+    "category": "science"
+  },
+  {
+    "question": "What is a black hole?",
+    "answer": "A black hole is a region in space where gravity is so strong that nothing, not even light, can escape. They form when massive stars collapse at the end of their lives. The boundary around a black hole from which nothing can escape is called the event horizon.",
+    "category": "science"
+  },
+  {
+    "question": "How far is the moon from earth?",
+    "answer": "The Moon is approximately 384,400 kilometers or 238,855 miles from Earth on average. The distance varies because the Moon's orbit is elliptical. At its closest point (perigee) it is about 356,500 kilometers away and at its farthest (apogee) about 406,700 kilometers.",
+    "category": "science"
+  },
+  {
+    "question": "What is the meaning of life?",
+    "answer": "The meaning of life is a philosophical question with no single universally agreed answer. Philosophers, religions, and scientists offer different perspectives. Some propose it is happiness, others say it is love, contributing to others, self-fulfilment, or simply the experience of existence itself.",
+    "category": "general"
+  },
+  {
+    "question": "How to be happy?",
+    "answer": "Research suggests happiness is increased by nurturing relationships, practising gratitude, finding purpose and meaning, exercising regularly, being present through mindfulness, helping others, getting adequate sleep, living according to your values, and avoiding comparison with others.",
+    "category": "general"
+  },
+  {
+    "question": "What is success?",
+    "answer": "Success is the achievement of desired goals or outcomes and is highly personal and subjective. It can mean financial wealth, career achievements, healthy relationships, personal growth, or contributing positively to society. True success is often defined by living in alignment with your own values.",
+    "category": "general"
+  },
+  {
+    "question": "What is leadership?",
+    "answer": "Leadership is the ability to guide, inspire, and influence others toward achieving a common goal. Effective leaders demonstrate integrity, empathy, communication skills, decisiveness, and the ability to motivate and develop those around them.",
+    "category": "general"
+  },
+  {
+    "question": "What is emotional intelligence?",
+    "answer": "Emotional intelligence (EQ) is the ability to understand, manage, and effectively express your own emotions, and to understand and influence the emotions of others. It includes self-awareness, empathy, self-regulation, motivation, and social skills.",
+    "category": "general"
+  },
+  {
+    "question": "What is critical thinking?",
+    "answer": "Critical thinking is the ability to analyse information objectively, evaluate evidence, identify logical fallacies, and reach reasoned conclusions. It involves questioning assumptions, considering multiple perspectives, and making decisions based on logic rather than emotion or bias.",
+    "category": "general"
+  },
+  {
+    "question": "What is networking in business?",
+    "answer": "Business networking is the process of building and maintaining professional relationships that can lead to career opportunities, partnerships, knowledge sharing, and business growth. Effective networking involves being genuine, offering value, and maintaining regular contact with your network.",
+    "category": "general"
+  },
+  {
+    "question": "How to deal with failure?",
+    "answer": "Failure can be managed by accepting your emotions without judgment, analysing what went wrong objectively, extracting lessons from the experience, adjusting your approach, seeking support from others, maintaining perspective that failure is a normal part of growth, and trying again.",
+    "category": "general"
+  },
+  {
+    "question": "How to manage time effectively?",
+    "answer": "Effective time management involves setting clear goals, prioritising tasks using methods like the Eisenhower Matrix, planning your day in advance, eliminating time-wasting activities, using time-blocking, saying no to unimportant commitments, and reviewing your schedule regularly.",
+    "category": "general"
+  },
+  {
+    "question": "What is photosynthesis?",
+    "answer": "Photosynthesis is the process by which plants, algae, and some bacteria use sunlight, water, and carbon dioxide to produce glucose and oxygen. It is fundamental to life on Earth as it is the primary source of oxygen in the atmosphere and the base of most food chains.",
+    "category": "science"
+  }  
 ]
